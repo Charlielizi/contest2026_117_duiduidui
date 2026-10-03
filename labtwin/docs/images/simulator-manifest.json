@@ -1,0 +1,60 @@
+{
+  "task": "TASK-20261004-01",
+  "kind": "same-source-desktop-lvgl-mock",
+  "source_revision": "678904361b8f1b29d43bdf675270fddfe13273c7",
+  "renderer": "Windows LVGL 9.1.0 SDL 2.32.10 dummy/software; native 320x240",
+  "toolchain": "w64devkit GCC 16.1.0",
+  "capture_harness": "labtwin/tools/capture_ui.c",
+  "font_sha256": "fe0adb56147299e53d5b208a561d6ca7fe4ce5c727a5ead38ad9827b26024f3a",
+  "preview_lv_conf_sha256": "8c898d0e153f1248d08e3a48f483b602fd1a2416c53a6a19ac409ee2edef6f98",
+  "preview_lvgl_library_sha256": "58a234b28f7d772509ec91469daf7b746f1a23da4bd7bb92d143d77ba1f0e122",
+  "ui_sources": [
+    {"file": "lab_ui.c", "sha256": "7a1e942ee5fe12af624f0d2bdb15f16f5ff0c93e75420dc09303a68cb67636c8"},
+    {"file": "lab_ui.h", "sha256": "d5ffe47f053ae7f77b68c14fb4a5c7757689a75486d34aacd25c0d406e67f224"},
+    {"file": "lab_ui_demo.c", "sha256": "a5c6dda6f7f231fc6c95b35cbf2aae0f6fea03e6193026a74e81b37cf6db05fa"},
+    {"file": "lab_ui_demo.h", "sha256": "5754132701222971165b8c3c25ba22f63bbc54ae80983af94d70253e84154138"},
+    {"file": "lab_ui_flow.c", "sha256": "ce26a6ae08c111e4715a5970543ba80b3c78c277a31461f8270b6a8a9c2673ee"},
+    {"file": "lab_ui_flow.h", "sha256": "7f4292b024fd7574b0fcb7291ad4d8b61dd9e4822cf4e748aa2b20e5348df829"},
+    {"file": "lab_ui_types.h", "sha256": "7e321581759b8e5af32e8192d820d498f92562a8aee9c6011b41dfb70f6d46ee"},
+    {"file": "ui_tokens.c", "sha256": "f67f179784f772e03fcc131704e3801ec8cd5cdc17037bafbb282adf17b558f9"},
+    {"file": "ui_tokens.h", "sha256": "0f3feecad9b29979a8c3fe1b46671a2eddbe1c19e59104e914c9687cc9d5f3a0"}
+  ],
+  "files": [
+    {
+      "file": "sim-ui-idle.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-idle-home-with-fixed-sensor-history-weather-and-computer-clock",
+      "width": 320, "height": 240, "bytes": 22797,
+      "sha256": "6dd5b473f0f06694c0653f8116df79b250190f4adc73cc25466becce84b052d5"
+    },
+    {
+      "file": "sim-ui-running.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-running-experiment-step-and-countdown",
+      "width": 320, "height": 240, "bytes": 21668,
+      "sha256": "230e606ca63baa0834bdacec02b2808ebda52dcf7db228a05c1189c23dfaf487"
+    },
+    {
+      "file": "sim-ui-timers.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-parallel-task-focus-no-real-timer-expiry",
+      "width": 320, "height": 240, "bytes": 16427,
+      "sha256": "e26e223f03d71e1ad2b26cd86df89df1e45e808877e2fc58c93b573f3ad783b4"
+    },
+    {
+      "file": "sim-ui-voice.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-listening-status-confidence-and-transcript-no-audio-or-cloud",
+      "width": 320, "height": 240, "bytes": 13229,
+      "sha256": "f1c39724a762236ff07372285164969fa295fc91ff64795fad9bc9fb63357a8e"
+    },
+    {
+      "file": "sim-ui-alert.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-environment-alert-no-real-sensor-trigger-or-journal-write",
+      "width": 320, "height": 240, "bytes": 16271,
+      "sha256": "4b9dfe7e6e411208636c18c22ebd7e0a77626e0e9ac2abd280411381d9ef643f"
+    },
+    {
+      "file": "sim-ui-complete-confirm.png", "date": "2026-10-04", "evidence_task": "TASK-20261004-01",
+      "scope": "mock-board-ui-completion-confirmation-not-portal-token-or-real-transition",
+      "width": 320, "height": 240, "bytes": 14087,
+      "sha256": "a98ae15d7a89e931aafc7a7601a0e2843740b2e423924c1fa07f736030ed20ef"
+    }
+  ]
+}

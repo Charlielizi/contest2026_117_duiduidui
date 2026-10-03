@@ -2,6 +2,12 @@
 
 Task: TASK-20261003-05；Primary Module: Agent Runtime。代码来源及固定 revision 见 SOURCE_MANIFEST.json。
 
+## 同源模拟 UI 图集 — TASK-20261004-01
+
+六个 320×240 原生 C/LVGL/SDL 离屏场景完成渲染与逐图视觉检查，覆盖主页、运行、多计时、语音、环境告警和完成确认。四个 C/五个头文件与 Ubuntu 权威 vendor67890436 的 SHA 一致，overlay 未改。语音文字、告警和计时是既有 demo 数据，无真实音频/模型/传感器/事件持久化调用，不增加任何硬件或云验收结论；不是 Goldfish 运行 R528 固件。
+
+新增 PNG 来源、尺寸/大小/SHA 与渲染输入校验，捕获源码/PowerShell 入口公开；字体/依赖库/exe 不上传。源码总清单更新，图像仅在文档目录、不入 ROMFS/IMG。此前实板结论保持独立，详情见 [SIMULATOR_UI.md](SIMULATOR_UI.md)。
+
 ## 文档与图像更新 — TASK-20261003-06
 
 补充项目亮点、开发架构、现场演示指南和 [五张实板网页截图](SCREENSHOTS.md)。历史日历/录音截图来自 TASK-04；环境、本地 Agent 与未提交任务表单为本轮补拍，图注及图片清单标明不同镜像/Portal revision。补拍没有新建实验、修改阈值、录制音频、发送对话或调用云服务，不扩大下面的实体验收结论。

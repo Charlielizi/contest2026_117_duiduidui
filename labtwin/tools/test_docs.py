@@ -6,6 +6,16 @@ import check_docs
 
 
 class DocumentationTests(unittest.TestCase):
+    def test_native_png_dimensions(self):
+        png = (b'\x89PNG\r\n\x1a\n\0\0\0\rIHDR' + (320).to_bytes(4, 'big') +
+               (240).to_bytes(4, 'big') + b'\x08\x06\0\0\0' + b'\0' * 4 +
+               b'\0\0\0\0IEND\xaeB`\x82')
+        self.assertEqual(check_docs.png_size(png), (320, 240))
+
+    def test_truncated_png_rejected(self):
+        with self.assertRaises(ValueError):
+            check_docs.png_size(b'\x89PNG\r\n\x1a\n\0\0\0\rIHDR')
+
     def test_external_and_fragment_links_do_not_need_local_files(self):
         root = Path(tempfile.gettempdir())
         document = root / 'README.md'

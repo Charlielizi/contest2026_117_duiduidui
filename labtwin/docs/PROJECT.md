@@ -68,6 +68,8 @@ flowchart TB
 
 ## 交付范围
 
+板端视觉展示见 [六张同源模拟 UI](SIMULATOR_UI.md)，实板局域网网页见 [五张真实页面](SCREENSHOTS.md)；前者仅使用 Mock，不能替代后者或新增云/硬件验收。
+
 公开仓提供自研源码、必要跨仓 overlay、固定上游 manifest、测试、构建/演示说明和五张真实网页截图。公开默认要求管理员认证，预设网络与云凭据为空；私人训练唤醒模型不公开，只有 untrained 占位。
 
 当前公开版没有新的完整目标 IMG/实板验收结论。离线“你好 vela”唤醒、真实云 Agent/ASR/TTS、板载扬声器输出和一小时录音不得列为全部完成。详见 [验证记录](VALIDATION.md)、[开发说明](DEVELOPMENT.md) 和 [现场演示流程](DEMO.md)。

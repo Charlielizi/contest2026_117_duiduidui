@@ -14,6 +14,8 @@ Task: TASK-20261003-06；Primary Module: Management Dashboard。阅读顺序：[
 
 更多分工见 [modules.md](modules.md)。overlay 是增量输入，其他依赖由上游提供；按 [SOURCE_MANIFEST.json](../SOURCE_MANIFEST.json) 恢复来源和文件模式。
 
+同源 C/LVGL 桌面离屏截图和复现工具见 [SIMULATOR_UI.md](SIMULATOR_UI.md)。直接编译当前 UI 原码，使用既有 demo 场景；它不是 Goldfish/R528 固件运行，也不调用真实板端服务。
+
 ## 实验与时间
 
 schema v2 增加说明、计划起止、创建/开始/结束 epoch。旧记录缺失字段按兼容空值处理，不覆盖原历史。时间以 Unix 时间戳保存，网页按浏览器时区显示；没有可信时间就保留未知，不伪造实际时间。

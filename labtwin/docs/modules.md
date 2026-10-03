@@ -12,3 +12,5 @@ Primary Module: Agent Runtime。本公开快照不改变正在运行的私人镜
 构建入口见 BUILD.md；组件/C 主机测试及既有私有实板证据见 VALIDATION.md。公开许可不包含私人语音模型或原对话日志。
 
 TASK-20261003-06（Primary Module: Management Dashboard）只补充作品说明和证据呈现，不改变模块实现：[项目设计](PROJECT.md)、[开发数据流与代码入口](DEVELOPMENT.md)、[演示流程](DEMO.md)、[带来源的实板图集](SCREENSHOTS.md)。新增 JPEG 不进入 Portal 或 ROMFS，成熟度仍按 VALIDATION.md。
+
+TASK-20261004-01（Primary Module: Device UI）补 [六张同源 C/LVGL 模拟图](SIMULATOR_UI.md)及离屏捕获工具；UI/demo/token 原码不改，Mock 与实体证据分离。PNG 不进入固件，不扩大模块交付承诺。

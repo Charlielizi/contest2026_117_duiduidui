@@ -48,6 +48,18 @@ def jpeg_size(data):
     raise ValueError('JPEG dimensions missing')
 
 
+def png_size(data):
+    if (len(data) < 45 or not data.startswith(b'\x89PNG\r\n\x1a\n') or
+            data[8:16] != b'\0\0\0\rIHDR' or
+            not data.endswith(b'\0\0\0\0IEND\xaeB`\x82')):
+        raise ValueError('invalid PNG envelope')
+    width, height = (int.from_bytes(data[16:20], 'big'),
+                     int.from_bytes(data[20:24], 'big'))
+    if width <= 0 or height <= 0:
+        raise ValueError('invalid PNG dimensions')
+    return width, height
+
+
 def check(root=ROOT):
     docs = root / 'labtwin/docs'
     # Original contest template is an archived reference, not maintained docs.
@@ -59,10 +71,23 @@ def check(root=ROOT):
             if target is not None and not target.exists():
                 raise ValueError('missing link in {}: {}'.format(document.name, target))
     images = docs / 'images'
-    manifest = json.loads((images / 'manifest.json').read_text(encoding='utf-8'))
-    entries = manifest['files']
+    board = json.loads((images / 'manifest.json').read_text(encoding='utf-8'))
+    simulator = json.loads((images / 'simulator-manifest.json').read_text(encoding='utf-8'))
+    if simulator['kind'] != 'same-source-desktop-lvgl-mock':
+        raise ValueError('simulator evidence classification missing')
+    source_manifest = json.loads((root / 'labtwin/SOURCE_MANIFEST.json').read_text(encoding='utf-8'))
+    vendor = next(item for item in source_manifest['repositories']
+                  if item['path'] == 'vendor/allwinnertech')
+    if simulator['source_revision'] != vendor['source_revision']:
+        raise ValueError('simulator UI revision mismatch')
+    ui = root / 'labtwin/overlay/vendor/allwinnertech/apps/luncher_mini'
+    for entry in simulator['ui_sources']:
+        if (Path(entry['file']).name != entry['file'] or
+                hashlib.sha256((ui / entry['file']).read_bytes()).hexdigest() != entry['sha256']):
+            raise ValueError('simulator UI source mismatch')
+    entries = board['files'] + simulator['files']
     names = [entry['file'] for entry in entries]
-    actual = {p.name for p in images.iterdir() if p.suffix.lower() in ('.jpg', '.jpeg')}
+    actual = {p.name for p in images.iterdir() if p.suffix.lower() in ('.jpg', '.jpeg', '.png')}
     if len(set(names)) != len(names) or set(names) != actual:
         raise ValueError('screenshot inventory mismatch')
     for entry in entries:
@@ -70,12 +95,17 @@ def check(root=ROOT):
         if Path(name).name != name:
             raise ValueError('invalid screenshot filename')
         data = (images / name).read_bytes()
+        dimensions = png_size(data) if name.endswith('.png') else jpeg_size(data)
         if (hashlib.sha256(data).hexdigest() != entry['sha256'] or
                 len(data) != entry['bytes'] or
-                jpeg_size(data) != (entry['width'], entry['height'])):
+                dimensions != (entry['width'], entry['height'])):
             raise ValueError('screenshot content mismatch: ' + name)
-        for field in ('date', 'evidence_task', 'firmware_sha_prefix',
-                      'portal_revision_prefix', 'scope'):
+        fields = ['date', 'evidence_task', 'scope']
+        if entry in board['files']:
+            fields += ['firmware_sha_prefix', 'portal_revision_prefix']
+        elif dimensions != (320, 240) or not entry['scope'].startswith('mock-'):
+            raise ValueError('invalid simulator frame classification')
+        for field in fields:
             if not entry.get(field):
                 raise ValueError('screenshot provenance missing: ' + field)
     print('DOCS_CHECK=PASS: {} documents, {} exact screenshots'.format(len(documents), len(entries)))
