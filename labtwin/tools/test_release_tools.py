@@ -83,6 +83,16 @@ class OverlayTests(unittest.TestCase):
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_jpeg_allowed_only_for_documentation_images(self):
+        jpeg = b'\xff\xd8\xff\0screenshot\xff\xd9'
+        self.assertFalse(check_release.violations('labtwin/docs/images/demo.jpg', jpeg))
+        self.assertIn('unapproved-binary', check_release.violations('private/demo.jpg', jpeg))
+        self.assertIn('unapproved-binary', check_release.violations('labtwin/docs/images/demo.jpg', b'\0not-a-jpeg'))
+
+    def test_jpeg_still_scanned_for_secret_literals(self):
+        jpeg = b'\xff\xd8\xff\0' + ('sk-' + 'A' * 24).encode() + b'\xff\xd9'
+        self.assertIn('provider-key', check_release.violations('labtwin/docs/images/demo.jpg', jpeg))
+
     def test_secrets_and_private_paths_detected_without_values(self):
         samples = [
             ('asset.img', b'not firmware'),

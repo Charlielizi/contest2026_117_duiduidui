@@ -1,5 +1,7 @@
 # 从公开源码重建
 
+架构、代码入口与可靠性语义见 [DEVELOPMENT.md](DEVELOPMENT.md)；现场功能讲解见 [DEMO.md](DEMO.md)。下面的构建命令不代表公开版已完成目标编译/实板验收。
+
 ## 环境与基线
 
 Ubuntu 22.04 / Python 3.10 / CMake 3.22，Node >=22.13（验证使用 22.23.1 / npm 10.9.8）。Gemini-S1 使用完整 `dev-ai-contest-2026` manifest，不能只切换 BSP；本包将全部 247 个上游项目锁定为 commit SHA。实际私有参考构建使用项目内 ARM GNU 13.4.0 工具链，不能误用 PATH 上另一个版本。
@@ -14,6 +16,7 @@ repo sync -c -j4
 git clone --branch dev-ai-contest-2026 \
   https://github.com/Charlielizi/contest2026_117_duiduidui.git submissions/labtwin
 python3 submissions/labtwin/labtwin/tools/check_release.py
+python3 submissions/labtwin/labtwin/tools/check_docs.py
 python3 submissions/labtwin/labtwin/tools/apply_overlay.py "$PWD" --dry-run
 python3 submissions/labtwin/labtwin/tools/apply_overlay.py "$PWD"
 ```

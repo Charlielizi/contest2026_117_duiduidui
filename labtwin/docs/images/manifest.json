@@ -1,0 +1,66 @@
+{
+  "task": "TASK-20261003-06",
+  "kind": "unaltered-gemini-s1-browser-screenshots",
+  "files": [
+    {
+      "file": "recordings-board.jpg",
+      "date": "2026-10-03",
+      "evidence_task": "TASK-20261003-04",
+      "firmware_sha_prefix": "edaf6572",
+      "portal_revision_prefix": "025017c",
+      "scope": "existing-three-short-recordings-and-playback",
+      "width": 1017,
+      "height": 763,
+      "bytes": 55031,
+      "sha256": "1bfc8a2bf152b19d1111b8e27899df20bff0c62b449bb2d8cc19a7cd11c0aeb9"
+    },
+    {
+      "file": "calendar-board.jpg",
+      "date": "2026-10-03",
+      "evidence_task": "TASK-20261003-04",
+      "firmware_sha_prefix": "fda4f282",
+      "portal_revision_prefix": "eea6d82",
+      "scope": "historical-inert-local-qa-task-actual-date",
+      "width": 1017,
+      "height": 763,
+      "bytes": 40495,
+      "sha256": "b56692c2dc605e550bc2988070795f3ea56d2aa7483425d326cfa4cdb403db1a"
+    },
+    {
+      "file": "environment-board.jpg",
+      "date": "2026-10-03",
+      "evidence_task": "TASK-20261003-06",
+      "firmware_sha_prefix": "edaf6572",
+      "portal_revision_prefix": "025017c",
+      "scope": "readonly-existing-sensor-trend-and-rules",
+      "width": 365,
+      "height": 1555,
+      "bytes": 48683,
+      "sha256": "0f70d6dc10c3d2bdc35306ae858183f5fbf45e0627842059cbb169c031311971"
+    },
+    {
+      "file": "agent-local-board.jpg",
+      "date": "2026-10-03",
+      "evidence_task": "TASK-20261003-06",
+      "firmware_sha_prefix": "edaf6572",
+      "portal_revision_prefix": "025017c",
+      "scope": "readonly-restored-local-time-command-no-cloud-call",
+      "width": 365,
+      "height": 1119,
+      "bytes": 34155,
+      "sha256": "7bffccc05d2b391f191c8224a1c93f67367afcba5882dc8abb09f662a9730322"
+    },
+    {
+      "file": "task-editor-board.jpg",
+      "date": "2026-10-03",
+      "evidence_task": "TASK-20261003-06",
+      "firmware_sha_prefix": "edaf6572",
+      "portal_revision_prefix": "025017c",
+      "scope": "unsaved-demo-draft-cancelled-no-experiment-created",
+      "width": 365,
+      "height": 1239,
+      "bytes": 44348,
+      "sha256": "12e0f4317e7a250f3aaaaf8f10386e8ff44e0a05a8e57ee9dbac52bbb776f208"
+    }
+  ]
+}

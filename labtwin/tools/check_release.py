@@ -28,7 +28,11 @@ def violations(name, data):
     if FORBIDDEN.search(name):
         errors.append("forbidden-path")
     text = data.decode("utf-8", errors="replace")
-    if b'\0' in data and not (name.endswith('.png') and data.startswith(b'\x89PNG\r\n\x1a\n')):
+    approved_png = name.endswith('.png') and data.startswith(b'\x89PNG\r\n\x1a\n')
+    approved_doc_jpeg = (name.startswith('labtwin/docs/images/') and
+                         name.endswith(('.jpg', '.jpeg')) and
+                         data.startswith(b'\xff\xd8\xff') and data.endswith(b'\xff\xd9'))
+    if b'\0' in data and not (approved_png or approved_doc_jpeg):
         errors.append('unapproved-binary')
     for rule, pattern in PATTERNS.items():
         for match in pattern.finditer(text):
