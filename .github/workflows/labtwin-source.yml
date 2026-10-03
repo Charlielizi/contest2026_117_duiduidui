@@ -1,0 +1,33 @@
+name: LabTwin public source
+
+on:
+  push:
+    branches: [dev-ai-contest-2026, task-20261003-05-source-release]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-portal:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check exact source inventory and added history
+        run: python3 labtwin/tools/check_release.py --base 49e331590f450f530162f9af301b19a223c93cdd
+      - name: Check release tooling
+        run: python3 -m unittest discover -s labtwin/tools -p 'test_*.py' -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: labtwin/overlay/tools/labtwin-dashboard/package-lock.json
+      - name: Portal tests, lint and board production build
+        working-directory: labtwin/overlay/tools/labtwin-dashboard
+        run: |
+          npm ci --no-audit --no-fund
+          npm run test:unit
+          npm run lint
+          npm run build:board

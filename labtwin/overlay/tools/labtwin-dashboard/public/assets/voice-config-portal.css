@@ -1,0 +1,38 @@
+.labtwin-voice-config {
+  border: 1px solid color-mix(in srgb, #0a695f 35%, transparent);
+  border-radius: 12px;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.labtwin-voice-config > label {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.labtwin-voice-config > input,
+.labtwin-voice-config > label > input {
+  min-width: 0;
+}
+
+.labtwin-voice-config-hint,
+.labtwin-voice-config-status {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+
+.labtwin-voice-config-hint {
+  color: #5e6b68;
+}
+
+.labtwin-voice-config-status.form-error {
+  color: #b42318;
+}
+
+@media (max-width: 640px) {
+  .labtwin-voice-config {
+    padding: 12px;
+  }
+}

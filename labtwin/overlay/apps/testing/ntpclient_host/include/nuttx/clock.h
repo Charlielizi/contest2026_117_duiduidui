@@ -1,0 +1,3 @@
+#pragma once
+#define NSEC_PER_SEC 1000000000L
+#define NSEC_PER_MSEC 1000000L

@@ -1,0 +1,3560 @@
+{
+  "task": "TASK-20261003-05",
+  "schema": 1,
+  "repositories": [
+    {
+      "path": "packages/ai_agent",
+      "base": "41723c61725c4e845bfee724f3ad2fafc416b6e1",
+      "source_revision": "08994712d50b2be12f0c2a9580ddd306a16cf057",
+      "kind": "snapshot"
+    },
+    {
+      "path": "vendor/allwinnertech",
+      "base": "3a890eabad1b56830b4aeb503f0ad15393909230",
+      "source_revision": "678904361b8f1b29d43bdf675270fddfe13273c7",
+      "kind": "overlay"
+    },
+    {
+      "path": "apps",
+      "base": "e81a73794786189f15e6c9fe9931ffddd561fd73",
+      "source_revision": "b9905d835ac8b2c995fbd21930d6dbab486ac055",
+      "kind": "overlay"
+    },
+    {
+      "path": "apps/graphics/lvgl/lvgl",
+      "base": "60e64160d3accf3c642654d6eb07a21e5d6440f5",
+      "source_revision": "192a888fe90dc8a5ad166d874e8809c89aad29e3",
+      "kind": "overlay"
+    },
+    {
+      "path": "apps/mlearning/tflite-micro/tflite-micro",
+      "base": "94f7cee178aeceb492a074b4e092db2706d7c9c2",
+      "source_revision": "156a60cffcff8a5d7e403f2b5bb44f13fd75349f",
+      "kind": "overlay"
+    },
+    {
+      "path": "frameworks/system/utils",
+      "base": "5e582301ffa1401d1e48d49cea46edeba97b822e",
+      "source_revision": "532002b7f8f2c4dc5f267470772c1e365554cacc",
+      "kind": "overlay"
+    },
+    {
+      "path": "vendor/openvela",
+      "base": "3b4562c2a7a0a4521dc53f1337d8ade4e6765891",
+      "source_revision": "6a260900014ae0bc27544821c1dc50bd425d56d5",
+      "kind": "overlay"
+    },
+    {
+      "path": "tools/labtwin-dashboard",
+      "base": null,
+      "source_revision": "025017cff3e18338475b04ba7d2664ca53742966",
+      "kind": "snapshot"
+    }
+  ],
+  "files": [
+    {
+      "path": "apps/graphics/lvgl/lvgl/src/indev/lv_indev.c",
+      "sha256": "11bae13cc13872b0875bf6dbb120a8ad13bcf09aa98e1462f085514f1569854d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/mlearning/tflite-micro/Makefile",
+      "sha256": "e527cf834355b7bf44ec441ca69e6bbb2f43c816135716883ab3239e0859639c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/mlearning/tflite-micro/tflite-micro/tensorflow/lite/micro/kernels/lstm_eval_common.cc",
+      "sha256": "a782706d54fa8fc660f26875bb302a8f2bdb110cb936105d57770790efea1553",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/mlearning/tflite-micro/tflite-micro/tensorflow/lite/micro/kernels/softmax_common.cc",
+      "sha256": "1886a0b5fc76e298824bcbf73e40b6e320cd54076fc88eb66c9aa783d67238dd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/netutils/ntpclient/ntpclient.c",
+      "sha256": "735aad0c0e01d60bcb3417ce61b4591ba504895d5a29e3ddb103ab66f079942e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/system/ntpc/ntpcstart_main.c",
+      "sha256": "c8eabc7a94ee9fc57a34cdaeeaf6723a4cba896134331dcc2b5a88ea9b27c89f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/include/debug.h",
+      "sha256": "63486a76c0e815c0fcb9fa9f186a49632823a1c68edbdc64a86a895c7921d0e5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/include/netutils/netlib.h",
+      "sha256": "f756329c5c4afefddc612e0c20edb346f507a8899cef37db02a13d81544a70b3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/include/nuttx/clock.h",
+      "sha256": "db3942ac7a1eb3b1857e85ddda5b02cd94a59248d32bdeb0e4ec9a8d1529d288",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/include/nuttx/config.h",
+      "sha256": "40ef9eb8a5cfd5d764dbb1f8c974f36c160d072e44c707ebeb78a90032dd4ebb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/include/nuttx/sched.h",
+      "sha256": "028a40ae18951164acdfae5f31245b309891684b1432a2b3d8def531d922890d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/ntpclient_host_test.c",
+      "sha256": "3e79c697d84dda0f5781bb0d16c65282fbd6e5430846f5769f86e1f1f169a319",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/ntpcstart_host_test.c",
+      "sha256": "f7c00f15ab159eaa4d24866a683cb17f45d1e8eda16070f83c5b0e538abe834e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/testing/ntpclient_host/run.sh",
+      "sha256": "ddc288928ccfacee974f817e617bbd9cd53fdde5c3de729743a341d6194c65ad",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/wireless/wapi/src/driver_wext.c",
+      "sha256": "244bbf76dc54de0f068863c0dd671362c61b2c12c668ce2e04104a542345eb97",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "apps/wireless/wapi/src/wapi.c",
+      "sha256": "2be1b4e813b415e6f06e2ada570b52ebcefdf5255d2fd74f70ab8f2512a05759",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "frameworks/system/utils/kvdb/client.c",
+      "sha256": "1812f2242bbabcbf2e2379184385da88f58ad0773dc32a5f7316c4e34e3074e2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "frameworks/system/utils/kvdb/file.c",
+      "sha256": "c42b372f4a329cdb0d5b4e29491d031b16bb7571aeb42a3c346d6f31aa341e39",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitee/ISSUE_TEMPLATE/001_bug_report.yml",
+      "sha256": "9989475a5c6a7a5181f007253471e1dc49ebcf85e9d5847b55c3edc5c1e9e960",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitee/ISSUE_TEMPLATE/002_feature_request.yml",
+      "sha256": "cff604fc73b6f602a8961e1edc4d7efe07a823c3d1c78d19f3a8a04c9bbeb155",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitee/ISSUE_TEMPLATE/003_help.yml",
+      "sha256": "8ea072f2a4e79434a9f09df1d40daabf51c354a6ecd01c3ae8563b65101eafe5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitee/ISSUE_TEMPLATE/config.yml",
+      "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitee/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "b60b7c8aa271698727a19b10e21b16691b3983dbe71fb9d789dc17d5393466fb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/CODEOWNERS",
+      "sha256": "6f9abdb3c6533307ef24e5f8c0c72961596c3c6a666dbbfebc1a8f18ab007f7f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/ISSUE_TEMPLATE/001_bug_report.yml",
+      "sha256": "aeb354eab65ad491999896c64422a70eab69145658098001af81b5da600dde77",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/ISSUE_TEMPLATE/002_feature_request.yml",
+      "sha256": "a914c100504d7a955d98d4faa773db72e80afbcabcbb2f213abec7df711b9434",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/ISSUE_TEMPLATE/003_help.yml",
+      "sha256": "75147b449b3a2197d6b8a2229ccd7e003a46a84bf54f445b6cb3ed05f0bfa1c6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "130614de4b743772d21434b26b0c85064b6630a4026193701c9b4ca00957dbc0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/workflows/checkpatch.yml",
+      "sha256": "4bff6489b46ed55a56815d1f709758aa597641e2a82a0d33866127580e518838",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/workflows/ci.yml",
+      "sha256": "5b3140a93c2d3a441b48d6e818ff1e0e0ef15fc46612347e4fce06beba1f0bce",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.github/workflows/stale.yml",
+      "sha256": "e8ae73f18f1a4799c721c53721f9f8e8d638660cf99ec5f4c6e9cb72ee8c1504",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/.gitignore",
+      "sha256": "54a50e923c2c6b00992e84b3fb4f9c29fe858a012e17408658b6bad1d6eb2256",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/CMakeLists.txt",
+      "sha256": "519910a1a0c643d605b2867d7e67df64f6994da10ae58579a957b1960de083db",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/Kconfig",
+      "sha256": "19527523e14b1768bfddebed5066ef0c09d37098b44b9e1c48aa553809b696c5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/LICENSE",
+      "sha256": "9439275fdd5f6b63c79a4bb29653babde074396e59cef7443dbbe8139ef0d7d6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/Make.defs",
+      "sha256": "e5ad05f05db9d5d8f7f27f0b4bf226ad960357afd276f63d159e8ff9fab98556",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/Makefile",
+      "sha256": "57f7ab022db4d0d64aa6840092e3f5d3658001ab54d2768f091ac0e0e023dfbc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/NOTICE",
+      "sha256": "d95e7092644587135f50245c37b9a05b875bfa402af38c84dd1dbf86f863c5b0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/README.md",
+      "sha256": "760a0b7460b2e15c44f366d081bb5e4d95d5053c43c65a95e23d153cfac81fe0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/README.md",
+      "sha256": "f15e6f366a2ece4641165d3ea0d21d5fcba473560ba5f5e4c241ed5cf80391b2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/app-launcher.md",
+      "sha256": "c3dc819dd15181e9e772fdf908507e699f780dc16d3f8f591ed0831db38d8279",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/battery-advisor.md",
+      "sha256": "3ac07a49a3541e7363a66cb90ae9c2d12852f5f6e65d897ed84e10b1f46cbc9a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/chemistry-experiment-assistant.md",
+      "sha256": "6d113329769c4eb17be10ebb9888b2ee3b98133944503a2fa7a9746882cd2c64",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/config-wizard.md",
+      "sha256": "83019c6d479ecc84906db83d76dada78480da37c534b14f3ec8a74a583a4e8b1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/daily-briefing.md",
+      "sha256": "2a93fa89c4abb088273c5e7064275a12591c988244973e06ffa7439c0247c351",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/deep-research.md",
+      "sha256": "60e2517acf884c7dce0f18cb7f214480f5960c2845af4073411ea8df0af3c9ad",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/device-diagnostics.md",
+      "sha256": "4c0aaa9dff5c4886cebda675b683458c51ce18df10bea9dc93dea1b923300a47",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/doc-search.md",
+      "sha256": "03db3a39aa7d8f9a97a6c455666746d7078375c5443589ad3d1dacdaca04e726",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/exercise-coach.md",
+      "sha256": "18796d1dca1de3d763d310b11b38c444122f966d8531fa345f1e781931b7c38f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/feishu-test.md",
+      "sha256": "4113efb489c95c6fefe871c87aa9deef4678e3489c2900cf947c522e418db556",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/health-monitor.md",
+      "sha256": "820b7b124bb43f78762419bc84962039f86852891e6855a2a228135c0076cd66",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/llm-router.md",
+      "sha256": "344bc2515954186a720e6f6dd6999cd84b5ff33b2c515ab25c3a6c00e40f3826",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/mcp-tools.md",
+      "sha256": "4a6fd330fb1caadcf22b26fa0a6e51c5293d21eec614e938bb2894fadc972897",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/meeting-notes.md",
+      "sha256": "5f528c3da90fccec003cdf0d940bcdaa94d039cae868c86817b7fafa9685d6ad",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/memory-manager.md",
+      "sha256": "81c6499a1a6f1f2fcf1dbca0c69090dd3c68453f76de98d6a0d28df820121838",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/mqtt-iot.md",
+      "sha256": "4794e89a40494992581dc591249512bd7dd759a9f733c679b811562e18e0fc23",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/multi-device.md",
+      "sha256": "b65c0ed0d04f3f513db84ff0464276e97eabb6f6133879729f44b3bb189c3aea",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/music-dj.md",
+      "sha256": "398db48cf901355c97c0fa0c4afaee9c3348bbb971e904b3604febcd31a0a8ec",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/news-digest.md",
+      "sha256": "cddc6811db26ec53c410dce2fbae76f8221dc58b54df9eb4101796fcb077e4a5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/note-taker.md",
+      "sha256": "508f039eea1b3f3b0c25e7edffcb79286e5159a78025a59513b660ec820aea57",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/read-aloud.md",
+      "sha256": "40555c771268594add9e0bc873db70074c12e12d9a064a3e9c4632266278c519",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/reminder.md",
+      "sha256": "8afdf48e387433d166989d13d1c757dd6d78056f10ccbfa97a00e02de5a0da8d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/screenshot-reader.md",
+      "sha256": "5876469f0c3e7a4ea7a15d305c4422f9dac7518a0f84fa0e95db77d10bfc09d1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/skill-creator.md",
+      "sha256": "cc487d890da081e9a3146ac6c45950dc9a01ffd1abc4b9555a3a1c196a5938b4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/sleep-music.md",
+      "sha256": "c90db024c7b6a8cb2020af4db80418326eeeadd953ded90a02167f7fc486d6be",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/sos-alert.md",
+      "sha256": "255a51419a7f658046f4815e89b13811fafd8104a3660345117294ec3b69629f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/system-health.md",
+      "sha256": "bb0e4f5c6cab7cf9709118cfc6cf8dfca97b0f69504309c4886154d82ce7fc87",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/task-manager.md",
+      "sha256": "846ac9a2bfcdeac42734eb229a671a8ba5014b37c629284d8a0f2123e8b2ae8f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/team-notify.md",
+      "sha256": "c698622b0eb8cfe24e29c358eb9f85ac1c0ad11b68a10769f072c6ee7d390d20",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/templates/MEMORY.md",
+      "sha256": "3bc155fb4558813d1d3aa42f195e158a3d8dd2ebd81e741ce922c273a207d530",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/templates/SOUL.md",
+      "sha256": "31a23fc96606a4aee057c69f3419379570531049b318b2370fa8abcfb173d6ce",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/templates/USER.md",
+      "sha256": "258201172d41c108fb7611ed18b4843eedca9f7408b3df0a4784599b10ea1f1b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/translate.md",
+      "sha256": "bc818add2df250c6152c972da0bd3c3737f91af7396e5ddeeee791fb2ba1a264",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/tts-speak.md",
+      "sha256": "41149c11c5ead74416486308d802778ceaa43e6d34f86901ce62da32cda3dbe9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/voice-assistant.md",
+      "sha256": "7556a20814161d50894f99a841b53d4f4d6945d04540cbc6d149eb4928c5fb1d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/voice-control.md",
+      "sha256": "f601e2357671ea9895cb9ed11f92bc8d643b1ffb882c859165f2960a409ac36f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/voice-memo.md",
+      "sha256": "cbbef86ac36390b67d04b6a9dffe143f6e37050aafd2799188ebeeb763dc261b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/voice-translate.md",
+      "sha256": "1c11ed4ce8c2514038d7c623948a8832e526fb00ac1401fcd21e9436bc088967",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/weather-alert.md",
+      "sha256": "2384629b69b1419e4c4e1ced7d4cd64df3789f4a92843d0f815f8dda41aaeabd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/weather.md",
+      "sha256": "92b4016798c3fbd6df7b93eb8ffc58544fbd5699f1d7dd138e1e7459675b3202",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/agent_skills/weixin-reply.md",
+      "sha256": "71d6e30fe0a2782b6117678ae8a750865e88793efc37943e1fe7a6dccc015174",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/esp32s3-eye/README.md",
+      "sha256": "113a39dc14f907da7c3e5e50c12a8fc6f06a1e4dc072b9e0dc13e2cbc0974ae6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/esp32s3-eye/esp32s3-eye_defconfig",
+      "sha256": "03b3f60f7505dd09ba92a0b176c11b5444117778944de167a137a58641291783",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/gemini-s1/README.md",
+      "sha256": "f30042152ac718247c9ad32bebdb4596b1f229b06a0288784c3636fa2beac010",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/gemini-s1/gemini-s1_defconfig",
+      "sha256": "7549af313649d1e667ab95d1a6740c42e02df527b5e06f417bc6e25ab8f502f8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/gemini-s1/mini_memo_ptt_record_fix.patch",
+      "sha256": "e74769a901a053b149c7d540559093dcac242ee1666ee74525325cb69daafd7a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/goldfish-arm64-v8a-ap/README.md",
+      "sha256": "6745f2a5ee54177ba44c485d9cc694d84c27fd5fcac449beb244833e6452c80b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/goldfish-arm64-v8a-ap/goldfish-arm64-v8a-ap_defconfig",
+      "sha256": "8f531cb71a380054d7d0408d9c237a3ad17aa31a12103c75c64d69a605d02c1e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/M3-LabTwin-handoff.md",
+      "sha256": "4435e6fbaa2fa5beb84a6d8dbf26fe191c6bdf216a729871da343db0c9e440a3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/agent-arch.html",
+      "sha256": "02fcb67aca17ed2e215deb7d95cd1a29febd1179748d70b22b0d7b58094de95c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/agent-layers.excalidraw.json",
+      "sha256": "dd2bdf0ad6688df20eb694028ab5de59ec87c01ecf7b6c0908d7a54eb981480f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/architecture.md",
+      "sha256": "95c58fc617402399be4e23c407c9002630a99125f568095240a8ae6ec527c04e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/channels.md",
+      "sha256": "2d6718ff5f7d8980a9199ba5febc906464cf17b1eb06cbcffee30d5c8df8eb29",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/cli.md",
+      "sha256": "f3f2e281c93a740467dfd5e828b0bd124050106293a56972b120012f0d0102e5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/skills.md",
+      "sha256": "09f7f070afd376e3c91d1f70de561aaaa96ed032f584e48d85e76c4390ad9d2d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/docs/tools.md",
+      "sha256": "3678a41611acb457e174a27b762cb4dd78186b8191127e70d77712a8959491cb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/fix_esp32s3.sh",
+      "sha256": "7bb49663db87023bc7632d99d2b53497d662a6d95d3cdf2479ed764e7564505f",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/fix_gemini_s1.sh",
+      "sha256": "a12ce7ac2e8f5241a2d7dda1737151cd36f2f4070dd2bcce2e5fd7fab710966f",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/agent_compat.h",
+      "sha256": "30ac94a3761115e3fb5b58a54e72c3cc607852686f1d41bc247edba769df7117",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/agent_config.h",
+      "sha256": "1b496da024716a173ba2063a2edf8ec276f7dfb3e2145cd5d3c2b77e5c14541f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/device_settings.h",
+      "sha256": "354c8f4dbb127fbdd9e87c66229ee7ce75c7ecdcbbaf89303b95c75e9d19ddfc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/labtwin/labtwin.h",
+      "sha256": "60dbb6ffdbbf2dd5939472845aa4febba312971d1c8304d7a850a027235971c7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/labtwin/labtwin_controller.h",
+      "sha256": "72ac0883f98156b0947324e46c26a86fb80a1a2b124ad2ab816c297987606579",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/labtwin/labtwin_protocol.h",
+      "sha256": "ebabb94cb6a98c2b575d62075cd40655257fb154c8eaa978dbbfa6c0283fbd6a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/labtwin/labtwin_report.h",
+      "sha256": "9ca4391284c67d7821f8157ff80a3344e2251f6b90e1230c5ff234afcebb0833",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/llm/llm_cache.h",
+      "sha256": "9feadd3d6238402d1fa6f938e27523cca7266076951b0d1401c414c44bacd603",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/node/openclaw_node.h",
+      "sha256": "d3e10ac60d130352bb4596d5e93de736401b9c84e1c871c878147c5098603d4e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/tools/tool_board_output.h",
+      "sha256": "f5b977f6cc5842da5731986a935f8f193f5f8e4bd374779bd4141b0ec44ba1b9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/tools/tool_control.h",
+      "sha256": "6bbb280e1059d614ebffe8999de9429b065de466875715882f8f664ba4260ed3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/tools/tool_health.h",
+      "sha256": "7dd1a94227edd9cb1b30635261fb4612bb24874ca605105dbb22a8fed8e88b75",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/tools/tool_media.h",
+      "sha256": "7e38de016e29235433845302a3e1e2ba7bbf99bbdc4d9a7d0240254a9abb386f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/tools/tool_system.h",
+      "sha256": "1fc625ae5f3c3e50865a0c754b3fb649afd0fbfcb1217f48c35a7cc7dd7a9aae",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/ui/agent_feedback_display.h",
+      "sha256": "44685b0d6ac2c746ba12192ae2f47130a00eece43ebee36c9e8d4f14afc429cc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/ui/qrcode_display.h",
+      "sha256": "744a371ec9a0ea4e43f4330ab7623b94bab788219a79228d66dbc243c0c501b6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/velaclaw/client.h",
+      "sha256": "b4cfdd6f4f66355360850f959488bd14d54995e617be5e6afea6de9fe7314645",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/voice/audio_capture.h",
+      "sha256": "65459810cc23e0e28837c706916996c09214e84eb91cd24662d689f8de158791",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/voice/audio_playback.h",
+      "sha256": "15b7beb1f9d2139d7e7616a122c8fbd4d94f10ca37b4ee2ec3ed1a7dcc4b445c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/voice/recording_service.h",
+      "sha256": "4762619c87208bd80dcf87c983f9deee88faec74a18daf43837206b40b088723",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/voice/voice_asr.h",
+      "sha256": "40958b4a91ef0d69d87a9b22d84023a95d2763e468f78e46c4b35a4e64303492",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/include/voice/voice_tts.h",
+      "sha256": "1df023862e26f1e066e3d796b38d71ce2f6c5117cfa038128a3d490098dd8c4c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/logs/.gitignore",
+      "sha256": "fde952cbe733dbbe072e087d78c08112089bc507c8ac6479fb4011a22c9e78c2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/scripts/add_jira_id.sh",
+      "sha256": "c21879c1f1b4f1c053d12740856933ffb34ae221e0a0d2cf89154285a60c87ce",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/scripts/regen_changeid.sh",
+      "sha256": "27f7a44e93c742110aece382f6d48e2deb7e8a7a9d70ea120ebcded0771350f4",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/agent_main.c",
+      "sha256": "6ad95dad8709c3fe769266e41d215b19000dd94c41a12b711c3af6ca5ce4d61e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_channel.c",
+      "sha256": "dda80b3b025a6713d8dc61bacdcfd0f5dc432c5ff2fbe92fb927909fe77c9dc9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_channel.h",
+      "sha256": "42590124d45d31db8ea9cf957422862329d701503190efbcac3adc4b795a511f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_labtwin.c",
+      "sha256": "7aad65f23abc03ca320b5eb94e0eddfa0bd61b3c3744d00775b6edc327c65330",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_labtwin.h",
+      "sha256": "c3e457082e449577c204b16132fa937167133ecd853c6a7007b7ee16e854b158",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_llm.c",
+      "sha256": "072a1f302d349cface103953b14fd6d02d2c26766b9a8d6f5a641a9c8c57b14f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_llm.h",
+      "sha256": "3fe8f1b23f0f54d52cf92400c9b4eab0f4eb3ae87b5738034346bd139a68b09e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_voice.c",
+      "sha256": "9a743ad07588d405e46e9796fb48f35d61ce1d455b094408b05f6d9e8ae2a9e0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/cmd_voice.h",
+      "sha256": "79ecbf4cbad283c6f14a1ea240e7dc57613abfc7e2b44752d391b9d7fd475d23",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_bot.c",
+      "sha256": "20b9e7bf11286bed387963ddbf88a75a43848f277511728d47b941bc5f348a9c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_bot.h",
+      "sha256": "c7c324967eb86ffe901f5b1a3505fefc99237c66181d1264990a0b690055052d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_http.c",
+      "sha256": "7220e343f71ff85b42f30dda7f4137574ae2ec44725af8d3dfee28fbb52f280b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_internal.h",
+      "sha256": "4eb5d404c1afcf07503b610a3488b491a2c4c376e8723417717996e0b0b6bddb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_proto.c",
+      "sha256": "a950ac127512fb4eac1b08ec5eb3a44722ed5fbebe9dae37440ad621b90b201d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_recv.c",
+      "sha256": "05311015d681d491d074d2ee106cc12fce1012e270c51c23dd5b6c25da7c8f1e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_send.c",
+      "sha256": "7cb377724843fa38e8189ab5581381362a007bbfd04b52c629685c40366db2b0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/feishu_ws.c",
+      "sha256": "5fe6303629fcc447b123797a659de23afab3cc24f447a64c02ea055225651d0f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/mqtt_channel.c",
+      "sha256": "8f32e3b86d1ff55dcdc16917a7db9710bf31c20b017ebfeac1c3e4bca52a8f65",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/mqtt_channel.h",
+      "sha256": "6de798a06489003a10221dc5dd2dcae2431aee7d9e1099db7e136c8548bb46bf",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/nsh_commands.c",
+      "sha256": "e3906d5aea8d0700acfa33c412f0a582bfddffda59128585b5b2bdab7d1f27f1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/nsh_commands.h",
+      "sha256": "9a4aa604057874642d2be12686ccd62494893e11c15fcfffc2fdf9d5b4a0da1a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/weixin_channel.c",
+      "sha256": "e972e7caae9db885263750052b797bce8e09b475a0dc8274c6f2355925ad93d9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/weixin_channel.h",
+      "sha256": "da557a2f30bd2801fee22996a309a0432feaa04ace04517d1bc93042242309b8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/ws_server.c",
+      "sha256": "8e9535b167ccccc5fd9a769c425ea6f3152b796e1faf31acadf5afc477c2b70a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/channels/ws_server.h",
+      "sha256": "fc3d9d1b956731d72a8926b591a9b614c5064e83ac9497bedfc1065e7e185e48",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/config/config_store.h",
+      "sha256": "adfc7005e090098a47851c7fbc50e8506d29bbcf0bf120f024f09a5b5a7971cd",
+      "mode": 420,
+      "adjustments": [],
+      "symlink": "../infra/config_store.h"
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_loop.c",
+      "sha256": "fa2e5ac75a45c848ed50690ada72326eca3922b9d5881539cc2c57106fc93d50",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_loop.h",
+      "sha256": "25dc922520c90f79d1ec4a94c3ea2ca9feb4da814572fe46000961de04cbd67f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_mem.h",
+      "sha256": "aa2c8a17b99ca1d40e7b5eba28a6957143e528296542fb979059e97fe97dfe30",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_start_gate.c",
+      "sha256": "2a24787acfe709719f8ad9b7a5017fc2ddf5b25a9580eff538c592a36999d7fe",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_start_gate.h",
+      "sha256": "b9e615b8c1b2cc7b29599583795ad0c1d70b9e35165a06f7cf2868a8e58565f0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_trace.c",
+      "sha256": "eb4b271fdf9cba68573553b9154c30756b2147ad986db47210f5befed08837d2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/agent_trace.h",
+      "sha256": "8118536b30ceccef4bf26ff8eae0cb860c901e1a1602d4c96d3b5da35d5b2db6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/arena_alloc.c",
+      "sha256": "198ff29be0db85f2bd92f790fc1ff5ffa22f61e7c61b20d8fbc3ba4cd26db586",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/arena_alloc.h",
+      "sha256": "54fa238669e56d9ce66126c5cfc3a20fd137bb0193d5458e200be6e08b520659",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/context_builder.c",
+      "sha256": "a1ec94d5b3c9fb53a47feaadc8d849c4b1060f270e437c3dcbaec8e7cc8d4f49",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/context_builder.h",
+      "sha256": "241698f4821054f3d909d3ca0287b93b14b9fa03c6dfa5e0ac3b65bd9dc067be",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/memory_store.c",
+      "sha256": "d3fbe165c4c94f85f4aa3b2ec7f993e413357612618d74c3fa2609ff5afd43c3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/memory_store.h",
+      "sha256": "7c45d5254664eafc13214e2b1154698f6dbe92bca96ed78637fbe5f5edf4f4ce",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/message_bus.c",
+      "sha256": "2487322b4044f556ad14ca664508862f08561c57ff499dd56cd1fae83ef7857d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/message_bus.h",
+      "sha256": "3cb37e5dfabc655bbc8bf18cc7257c120395fa459fb185388fb5924b400c85de",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/message_bus_tap.c",
+      "sha256": "a4ff3c0e1f9ef02b1f089e115ffefb29e7000d47184e02ea8d0c9697652f8b0b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/message_bus_tap.h",
+      "sha256": "76c9775af1e0f15228b5ae26ef49696dbf48d02acb5ec62ad98be235061ca9ea",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/session_mgr.c",
+      "sha256": "bcc17195d2f23882733fc854229fab8153ccc4db106ca9404fda2052c0016ae0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/session_mgr.h",
+      "sha256": "db598ffd548ee12d05c096e22e7fea49cb2383dda48280e2c13fbe44dc40989b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/structured_memory.c",
+      "sha256": "43988717de2b389bfde137b0262c02eff1c7849546f4511aa6ac6bd2ea439b52",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/core/structured_memory.h",
+      "sha256": "a71d1f8ebc1a4ea1eddb8afb30c169b690457a717f1d9c80b0763959957e5986",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/admin_api.c",
+      "sha256": "f9be8fa5945dfa7be7569ca6906b9b1c67e183a003eb38ea37c209effd375c15",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/admin_api.h",
+      "sha256": "316833370195e05c995de95d1ff06028ade3b2b8a12a518f27a6d66ec615745d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/admin_auth.c",
+      "sha256": "b66a2549e85c91e9eedd42ecf40909a33fcc1d39978e83712d85804fbf0e57e2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/admin_auth.h",
+      "sha256": "9298af11c2ff1403c00b2b2540fa1e4493957b83e6936529b6e0f56c3829cfeb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/agent_logbuf.c",
+      "sha256": "715dc2573e6b20e9381bed02a8d8a42ede879b9681ded99c3de710efdb6971c9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/agent_logbuf.h",
+      "sha256": "02c322809ad507188b6f8d2060a4e4087ea750db47424182bcb8a796ebcc068c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/api_handler.c",
+      "sha256": "9cc930412a7775fad6af677157f63004b07e42c08b0d2616a2d79a14f8a0db05",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/api_handler.h",
+      "sha256": "8b98a161d30faee58956beb3a8b0a744ea41aacb22feb61f28f5709c2581425a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_cmd_handler.c",
+      "sha256": "4ae1da28582db1f3966618326a04f1bbb29df1e66fd5cdaa4cc703586cebacbb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_cmd_handler.h",
+      "sha256": "11c945cd31abd283444134d7350438740334c58e05445616b17236f97f031d54",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_gatt.c",
+      "sha256": "aab4f24953625ad495059c88a5eb845a88e5fee164cc24f7941e35c11ecc1e44",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_gatt.h",
+      "sha256": "6e1a8b9a91f9ef3436c60dab6131de63761a50520ea48eaa714f6d1be01269f9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_net.c",
+      "sha256": "4e7fe49768567b3de5e543aebae914d59ce8a7c7fc713b764111e32b247b2cca",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_net.h",
+      "sha256": "278abd26250596bfc72efa3776ff9d6110cd10136577e30aeefe6965f74bec46",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/ble_provisioning_stub.c",
+      "sha256": "57d83fb468b73290799f0a954ce3aedec6adead90c19a3be9b5766359d1718cf",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/config_store.c",
+      "sha256": "734423a26b6af58d46ddb32c6b3fa3ac7a9ff275da61c025f60f3e9b9b6bcf21",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/config_store.h",
+      "sha256": "05d9c3a6928e5f8a9194cda56c14fea282e0f7d336ccafcf8b15ff88cefc9bdc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/cron_service.c",
+      "sha256": "674a1707ac5de5d55b6cef6cd955a5a3b528f699b29ca27dc169e807d74d1c1b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/cron_service.h",
+      "sha256": "4a76bab6e8485a7a193c2d615c94986284d097f3f8458b5e2d84c38037c371b3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/device_settings.c",
+      "sha256": "8c3052a394ee43f95671e5004ce2716ddf125556ee7a48d6c57c5f4f437c1ab7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/heartbeat.c",
+      "sha256": "b9088feac1af8eb421e98d45c1894583362dc1343735cadd99c90297b5b1b5f3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/heartbeat.h",
+      "sha256": "8b98ee9d674d971fd5a102faa9b5e2b2509e137b12dba4060c02a561591a44dd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/http_byte_range.h",
+      "sha256": "e9e17fbb8a7d8286d79ef3365ac44d72ee73e327e27e3a142efc2698b35ecf06",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/http_proxy.c",
+      "sha256": "0d50396e621ec593126066090b8cc882041d0a161b29fc170c9f31ba76d337f0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/http_proxy.h",
+      "sha256": "d75916e66c9a29e7d61dc2973a5628072a646397415349ff55b418988865c15d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/mdns_responder.c",
+      "sha256": "609f63ee8f87684f3b1abbfa01dc541d6c7b8944973acb91c20a52162b5c3a9b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/mdns_responder.h",
+      "sha256": "87f350ec49f2865e210ec31cfec49d5629185a8e6dfe04cd1182b30da3e067d9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/network_manager.c",
+      "sha256": "1efa751d043eace468572df4721b2ae5fde3eb5755a5e241d2233a921df9ed2b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/network_manager.h",
+      "sha256": "084cfde4ee8312a3268ac719f149e17bdbd8a5d922a51d3124a266234a16c253",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/portal_chat.c",
+      "sha256": "c14824b6d9b14ab63c3eec81263734283c1f8b6747247427d1ba9e7e5a98c10f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/portal_chat.h",
+      "sha256": "ccec92dd69c4456da94b694ffbf8fc86a2a25db0815ba004c45535a4c22da2e8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/portal_operations.c",
+      "sha256": "3d9fbb2b77428bf7b8ceb3b111846ad6c29ba904ce1c535d6fa356abdf14b995",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/portal_operations.h",
+      "sha256": "950ef5d0a5f73c11fec54013950d8ae51e7514c24c5a42c593ecb7a50e6ac7da",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/tls_trust.c",
+      "sha256": "67d0861da8a8b9ae816cd88072ec457dc1b6770fed74c5b84c5719dfb9f42f37",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/tls_trust.h",
+      "sha256": "bcd99266a620eaae21f066433be56451a780fa7525093fd3d502e4033267fa9e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/vela_tls.c",
+      "sha256": "8035f0418fa1cc90555e1e8f4bd6c552ff11ce2f3ee5cd5ccc4fad0193c72837",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/vela_tls.h",
+      "sha256": "03fc778b15fea3b723d5a0e6c13f9bd8a13d377199b749f7f68efa8364edd5ab",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/web_static.c",
+      "sha256": "e42d6a720ee24f8c9e67e13344e447432bcf776479d33681894722c8c39e2b70",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/web_static.h",
+      "sha256": "61630aaaa996ee27b02f7871b224c72d0ab0b7cb9931d0e01dae09f461b732e3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/wifi_portal.c",
+      "sha256": "287c1c13bf944bd8b1cfda2425660e4732cd5c245d436ef8f6a82b239a19c9f4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/wifi_portal.h",
+      "sha256": "36ecea593ca1e50faaab47ba20d3b46a0085b4146632fdf2b8fc706c72e8ed5f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/wifi_radio_guard.c",
+      "sha256": "7a227bb2473edb0c4e8f1d91409efe706f53de2e356d5101e180afee98cdf71d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/infra/wifi_radio_guard.h",
+      "sha256": "5edfd3fd818531cb237b97f737a6b8ca7e3c5d2891fabb9f1f917137f4cc79a5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_controller.c",
+      "sha256": "9df851bd547a642233c784513c9a9f21b94b73b4f77cffe5cff50220aedaab29",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_dashboard.c",
+      "sha256": "36c9038d6cf48538eba806b25cde8979e91fc8115cee04cb0d451493ff2c85c2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_dashboard.h",
+      "sha256": "9c352c78909825ad7fa3221bc063a543657fbbc899c68b5a6aed0c70d93af6d5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_environment.c",
+      "sha256": "8aeff1a8125fb40f82d7cfed46c631384ccbe8e966f322b9b9718b6e867ca93c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_environment.h",
+      "sha256": "308a1431fd41fb937355cead4ba17ed9df1fe6979f71cb9d44732a831a7ce7f7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_protocol.c",
+      "sha256": "aed50d80e12fab13b57f83021621eb30aa4b76afedd8da740fa49b99cd89a9da",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_report.c",
+      "sha256": "2f23542e6d0c3d0d269927ce8a278fc8496a583e78bdc5ea84142c6eaa6aa289",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/labtwin/labtwin_service.c",
+      "sha256": "723d38fe35cbf9885c7cc97ff621f4fdd4815e246aa8fe82c3ff6f960590db8b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_cache.c",
+      "sha256": "7570a9d9ce50bdda83e9ae925992c9f669f35fcb4d7fe963c2954f7fdae8daa8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_internal.h",
+      "sha256": "3038fa4bbd4be169b4720e87f05c625930d7953fe8de5d90edc61833c32ea3e9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_parse.c",
+      "sha256": "f16c617f9e8d168c214e6e72968dda92203c9b0b9ac64db3cb87d596d03c536a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_parse.h",
+      "sha256": "d7e808057ef2b835224cc1b62d5e8bc2b9b1731118b3ca8613c1a8516a0b1348",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_proxy.c",
+      "sha256": "57459a361d191a7b1dfb6519ffa233b5d54a341f9c6ddea3e9b2d597419b36b9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_proxy.h",
+      "sha256": "bccddf330bdbc94bcaab39c790e0488393ce8db541836d8f0221946db3af68d8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_router.c",
+      "sha256": "896f9b494b34c38603f907b443debb4dc406eb667c5d518b5454a35ee765bda1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_router.h",
+      "sha256": "5939e90f146dc96ecdd448a665e15b1bbaeb6e53dbd787ea9d5af9219781c7bb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/llm/llm_vision.c",
+      "sha256": "7b42a38c60c3a4ffd617620e37945cdfddb4ac4b7f0114d6dce362111f16b6b4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/network/network_manager.h",
+      "sha256": "53bc7bb1698f7ab69196b5acda09299c8f9fa37da4c17c43e89133da2cb33475",
+      "mode": 420,
+      "adjustments": [],
+      "symlink": "../infra/network_manager.h"
+    },
+    {
+      "path": "packages/ai_agent/src/node/node_client.c",
+      "sha256": "7fd2c31d979b1b30a4dd208a5ac38d98f5c92641b675d61e1357c4e42af60865",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/node/node_client.h",
+      "sha256": "81d877661b75ad4c091ae1ab6282ae8f68ac3030f0eaa24d4d10d6c8a1dda2bd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/node/node_manager.c",
+      "sha256": "07d86333c755b3ec99715be999182673bf6445f11527113eb080c66949cd4810",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/node/node_manager.h",
+      "sha256": "0b24b394f64e483a4923dc79a17d2c55540337631434880f05462457c3b08a9e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/quickapp/velaclaw_quickapp_bridge.c",
+      "sha256": "51b7ef78c810db2040d94a308ca11aaa317697dd07d30452cc60e1e981d48787",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/quickapp/velaclaw_quickapp_bridge.h",
+      "sha256": "76e2505e524bb57a575ccd0e8c39b34495dcd698712393f8932c8a5d3440c789",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/sdk/velaclaw_client_local.c",
+      "sha256": "968d99a27bcdb5bcef3ff32ef42d006733baf6f34d886e70152d14a0a341a7b3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/stubs.c",
+      "sha256": "7fa6e62561de4cda5341dec2f068f9edbc9b790e0aa5f77f5db0d327674d0140",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_bridge.c",
+      "sha256": "d98ef8cf59befa49ee3c3e5994432896bd54d6a6a5a9b232b11015849138483e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_bridge.h",
+      "sha256": "f64c32e040cd88a0daff18b41ee7428d6f1ad9147ce6ffb4a3f5fea3ba014f00",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_builtin_tools.c",
+      "sha256": "3fef77590e379a35b7d2b5896ae4199b6ce5d4688beca42ef93956635fe63076",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_builtin_tools.h",
+      "sha256": "477a7e528ed4fa5e200a98b128e96e555680e0c7d968fd8bb301a36806516207",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_client.c",
+      "sha256": "3f3ffbc388455e71bf34f1ad58cc496cf99580ae576f3a8d1132af7e8dc8ce25",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_client.h",
+      "sha256": "fb28c60d4cd5e471d4cc385a879d9327d1472484e3a6b59d4f800c294464b03c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_server.c",
+      "sha256": "c67cdf74bf5903301dbdda608f3252773d29e3081edd0b56c4218396e5ae2729",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_server.h",
+      "sha256": "ee5e481a6ec4416d74dd8685814ec8ee1b07e8837e2fff49b0594048290b7d64",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_tool_registry.c",
+      "sha256": "3e95f3b34c7ccb3ce3e409cf61639dccf70ccfafd568b51dcec771a369484974",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/mcp_tool_registry.h",
+      "sha256": "53110e243fa6284affd9119418a01aca2d0c154d5f98873aa07dfe72848b5a6c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/skill_loader.c",
+      "sha256": "06e62055260917e30a04c6e57b95fb83a17f2ff5d0447fbf8cf4cc33f297b864",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/skill_loader.h",
+      "sha256": "6c90e688b91d55632f6935cf3364c51c56171a4b159443d22743a19c9c39dbfd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/skill_sync.c",
+      "sha256": "c1fdbe8d2e4d47d1c4d43b7671cfadb0cbc8c4e98601af62106eb4644b5b58e5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/skill_sync.h",
+      "sha256": "d3c6e95737842c4ef606bd829bc22f4adf6c050a78dc3c0b6f5bfc205a632fe1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_amap.c",
+      "sha256": "6d037463f87b810e9eac1eb641a1894201830cfdf1e133fd4edd38aad68a055f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_amap.h",
+      "sha256": "d01bbcfb7ab9636c5c42d4e07cb54ec60e1e0c21ed72da2577e30094170ff984",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_board_output.c",
+      "sha256": "532312b668f9efc12bec87948ec8484d07cf5f92306d6d68a0eeeb68e0969836",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_camera.c",
+      "sha256": "cfcfc40632627b46b741e9349614ae911d3684692efd8a0d7d0031b21e3f6ac2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_camera.h",
+      "sha256": "ba6378b2899323d7f7cd5062b7986154bc75a5de08dbca24372ef8d588bfd438",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_control.c",
+      "sha256": "eccd22cf0cbe7e31b3ff01f1d17f920ac56f8ecf6f453940d605cec63dcef246",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_cron.c",
+      "sha256": "e61dc25ded9c1355fa31173915bed0475ca470ee614ff376ba4b5e0be9c8ca55",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_cron.h",
+      "sha256": "fe57b50eb2f935f0cec9e225cb88b9b03498c1957e2086c0d42f17c3b4b0f6d3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_feishu_chat.c",
+      "sha256": "05de5088b67f72724bffe3aeaf69f7a14ace7821cfd39a4a6a590ea9da0caabd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_feishu_chat.h",
+      "sha256": "dac045c87cb956a454027bd28a4d8d0c6d6f2cc2d1675e3672c77911334885a4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_feishu_doc.c",
+      "sha256": "95393dae5dd327438d20d2849dff34f6cc746874f653cadb47adc9e265322d29",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_feishu_doc.h",
+      "sha256": "e0275e080e2575cf29919bbccb8437e0111f4cee6800a23d8fa1c6a9d127e0f2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_fetch_url.c",
+      "sha256": "5ebe517f2c868ad8a16909d584f532356bce19c6bd5f57e2f12ad53209e18c06",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_fetch_url.h",
+      "sha256": "e4b3ae9364bc2fe09fa4b96960bd0198bb2ad6d3b1f1b71b892c1a9b35f8ed84",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_files.c",
+      "sha256": "a264fc85de742c18e7dc736cd80a8864125f7aa8e79640a5324a8a90bc72f905",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_files.h",
+      "sha256": "7c3f0a4f83b5e29cbb5677a35271ca719c4c1106fbfeb3f51154dc9ca4259207",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_get_time.c",
+      "sha256": "0d8b84c7a62ebdd46600664aa6873fcf25bc5a1ee2d185ae3106b739727029b7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_get_time.h",
+      "sha256": "aaa3fff0f484b972569ca88745252d87128ff42698d5d8c815af304b80768d0e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_guard.c",
+      "sha256": "f8a7943a03864dc4ca5bdc26803b416f0e62de3aa97fdd16f975fb58e938c5ef",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_guard.h",
+      "sha256": "54a4327b873843ff0d6301c248179e8f688e2f2df03dbfd9db7e707dd4bc9584",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_health.c",
+      "sha256": "bbe9978a1ba46330a7649f23d25f9f7542c3ebdcd002c2e5278b060ee7f99efa",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_labtwin.c",
+      "sha256": "8c4b46d26f1bab6be56c2fa2c0ef3bb76e2bd0e58271dcf3acc77fdeabb28865",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_labtwin.h",
+      "sha256": "5cadaec8b9f9286d9ce02b6313a4e0815a63ba60c8e52e39b8b2853999ca5961",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_media.c",
+      "sha256": "acdad7ad3cdb73234d0b868473c3216596c1765b99f1c4e14f6a9e4a4cadde31",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_memory.c",
+      "sha256": "5087967cb239fff263a807ad83a9d1ae40f13dee5619265dc3fb543a3911aead",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_memory.h",
+      "sha256": "8671cbddd253f0a66822c4a46a28149db212862358a7b496a76b812b40f03d15",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_proxyquickapp.c",
+      "sha256": "49e09e90cf5512d0f8ba75b19c8d37bdae8ab80c95c806b3040a22d4bac68e5b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_proxyquickapp.h",
+      "sha256": "523f9c3c3c08a44bdabb644ec3a83d37fd3b5c7bf03c1349eed87bbe2ad10605",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_registry.c",
+      "sha256": "a76e593551b4c5bbc2d7cc306331809a9b0a88b3f5dd7bae3fa23b96638789ab",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_registry.h",
+      "sha256": "9752dd42856a8642eebbae3f03aec8d73ed393c8f722e99f640fb52bd7ba0de4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_shell.c",
+      "sha256": "a1779ceca978555caac61bb7472b82efdaa06c7f6c0444c19db00abcd509e9c2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_shell.h",
+      "sha256": "d32c07908f9bae612042dfee1398d143a9131fed95b01df8a849419dfa2d1490",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_system.c",
+      "sha256": "7921ce0a2a658daff20894cbd1952496bca002bb67080dd5e3b9782fc8c7fbe4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_vision.c",
+      "sha256": "6223d28290f2b6a51d6f2007d283904c01155cac254adaff6003d300688fdd6b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_vision.h",
+      "sha256": "145c54d7fe6ee320a2e0924240bb4110b535e9ae5ce2ee6d174b5e4296609c6a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_web_search.c",
+      "sha256": "8c3297845c00a93817826eaec3cebb2fe578fc5e8a5804bb80a7895751932305",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/tools/tool_web_search.h",
+      "sha256": "ecbd91bf52be306948792cb0b27d7d147a15894c67b1be09761a8cd828e0b902",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/ui/agent_feedback_display.c",
+      "sha256": "8fbce77119f937cdfe539f259e3ded4ea0cea09ef10a063e0fa1d9ca3948f7d7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/ui/lvgl_ui_channel.c",
+      "sha256": "dc6dd349cfd4523c4d079cde04cc6195dd963462ca3ea0a3cf1224c19d380081",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/ui/lvgl_ui_channel.h",
+      "sha256": "cf407b528368c8b80328b332464ce2178f8bd12b17df02cf51960d9001d31629",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/ui/qrcode_display.c",
+      "sha256": "e64c5194ba0dfa8bb1f70dcba8dc6f8691642ddab4cc82c89905d1639bba681c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/audio_arbiter.c",
+      "sha256": "0fd8a96aabffc7f294be86f1196001ffbb3bae922e6d4c1a6eb07d74f43d0e3d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/audio_arbiter.h",
+      "sha256": "f56b15d5998b6ce3f4c2f48f6f3577efd080709d2fea3eb7d625b505e892478f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/audio_capture.c",
+      "sha256": "53868a0edb51ec94c50e1423ac90d7c7a3a987631bc9aa2590079e2d1fcb08b8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/audio_playback.c",
+      "sha256": "6c9a0dcb7548623717f9e7efcff66e374664c0675c731bd65174e2141fcef856",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/recording_service.c",
+      "sha256": "d360b29d3226146e7cda7380c3c2dd36519024469937c4909f61a8ad8e19ac0d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_action.c",
+      "sha256": "5d99fa96b87a31276acb9ecc0a3b8d4c57e53522570b04c008b9eed71be05d08",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_action.h",
+      "sha256": "0e8982043f8ec75a2526da5990ce99d404fde97a60b2fa6006aa0c42ce5d24a5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_asr.c",
+      "sha256": "41f35e8a0dcfb77421f0ed4b90980bc3a06c59740d7507b33573719feb22ead7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_channel.c",
+      "sha256": "e73260dc095c46746d4ea87b690c9ff7f18a71b743982096017c31a7dbe2424c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_channel.h",
+      "sha256": "08db84056e2cb71e7f6a088e1d972cc21079c1f16a093512b716c55e9c7525fc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_cloud_guard.c",
+      "sha256": "cf918694ef5eb7b6063431752c6fb3ec26303a7561ca5ed03b16333c620a6670",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_cloud_guard.h",
+      "sha256": "bde7ffaf0d71a1bee30b70fe13fbd1e5b61ff46f56999b841244d9d1de123c98",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_request_ledger.c",
+      "sha256": "ebecbdbb5da8e62fbc160dd292000100bc498c057c5af7762140efc993b9090d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_request_ledger.h",
+      "sha256": "3c4f6b58f276f78b81f47053b7f57f166aa344f90ad15a5e9cb30ac5ab781b66",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/voice_tts.c",
+      "sha256": "4f18632338c63a2b9437e74b3450cb59c11cb2ea55cbf8f9a2ed050ed83ee4ac",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/volc_asr.c",
+      "sha256": "437a546004565480df6fadecc9e2586b3d73d02543f9c83737a4a4ccf935892b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/volc_asr.h",
+      "sha256": "8ed02ee2608d8f53aefb3b5d0ee32317a97afe039a5c6bfe65b0a79308c63f75",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/volc_tts.c",
+      "sha256": "1e3f42dc7778425ceb412e67a8c92c17d4c36f1669eb772b7f54c218634a09c4",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/volc_tts.h",
+      "sha256": "174f944992917fac3605776132f51874d3ec84a995df6a3fcbceee7199507e50",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/volc_tts_ws.c",
+      "sha256": "3aaba757e2cb53406c676f8e802e562c7af1f32385a51e944ef0bdbfcc4d40cd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_engine.c",
+      "sha256": "2ddbea99c71880a0deb9262bade4ee513efd28860fa1c03552888ff6c9c22947",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_engine.h",
+      "sha256": "bcec95af7e5e2447cb4786c0c23de50ca82913a45ba44201bfd8adb0c6c8b84a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_labels.h",
+      "sha256": "b31a5cb0e5fd461a94e14df36a41435127ccbe0faab783c81834141b2694e07d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_model_data.cc",
+      "sha256": "cd2e68a00550d65d9c75b3e239922fa2672e3e5c645893e8b4a79b858175e11e",
+      "mode": 420,
+      "adjustments": [
+        "Private trained asset replaced with untrained fail-closed bootstrap"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_model_data.h",
+      "sha256": "cbe5ac36fb0a003f0e6a6e1c8072625817e13ba0b12acd22c701a197d669b8b9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_runtime_compat.cc",
+      "sha256": "72e829f654aff99f2b32927affc3b3f4f202fda82f33ae4dc6c4521f7b5a2f5d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_session.c",
+      "sha256": "611dd4717d22f86bb5938240e89f771f503eda2b51096e738a93de785aef73dd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_session.h",
+      "sha256": "44e7932e78178c7f7cce5872e2595f05b9d7053315ff3af3ca5c52e844b55a6a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/src/voice/wakeword_tflm.cc",
+      "sha256": "c1054e38154ee05ef63aed044d41833a832c53172220ff59092f8d12a059bc89",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/admin_auth_host_compat.h",
+      "sha256": "d3794df1c6dba34acbb8fbf7556f86ce8fd76115d2c80d311fae2ff693b8d792",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/admin_auth_host_test.c",
+      "sha256": "828cd81ec7e90a901badff0030e553e26cfba405ba5060cf6d016d99a85207e1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/agent_runtime_lifecycle_host_test.c",
+      "sha256": "f95f92fbb75d7276eabf2e20dfa259cceaf59b096e655439ee4eb5adcb96c4b0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/agent_start_gate_host_test.c",
+      "sha256": "827799ad8a3339164ab8fbadcee930a7645d9e6ba29702740e0f6b0dc7044a60",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/http_byte_range_host_test.c",
+      "sha256": "0b46e4ac25b2b731b02552ac7c788c8d28d68c6a30377a5fd632b3e21deab370",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_controller_host_test.c",
+      "sha256": "fb6e254e8e572b9c0edb5422a4d00082d238b5e7a3a2f99ae1a67112e4b4cd8a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_dashboard_host_test.c",
+      "sha256": "95d0deeb11a61388bf218687f91729b62768f331c200ec42857ba2bc1a247b7f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_environment_host_test.c",
+      "sha256": "22b6a9b29a2b18f84d5d421436d0aefc8631a8bcda3e7c2fbb578c88c88f7e3c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_host_test.c",
+      "sha256": "99798443a051125a9a93d922a5dc2d96551187c14ba464e6cd751ab7e1b238ce",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_protocol_host_test.c",
+      "sha256": "004cb43ff3906cbdc2bd96f6133a82c042ae03dadb455a1ed68039a23e182b2c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_recovery_test.c",
+      "sha256": "25ab14dcfcbaa351a64a0dafffbdf93706674473054c3bccc4ea9bdb766a5379",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_report_host_test.c",
+      "sha256": "274c962d0660f22499dde0c9ef969c91e3ffe53ef6aca14dc1d6cf72d89b486a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/labtwin_transaction_host_test.c",
+      "sha256": "723941c13f2be322fbbc48b1cd66908f006eda9eed8a55e7ef71edc2177656a6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/portal_chat_files_host_test.c",
+      "sha256": "6b05ac7e84fcbb63ab3ad75baf4a55c1d58b7649b04b2003dd0b58ea8bee690a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/portal_chat_host_test.c",
+      "sha256": "e9838f0e7980eea1b6e42e0a335f3b5eda7c5f2a63d0fc429eab1cbe28001a38",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/portal_operations_host_test.c",
+      "sha256": "3c89cbace88c0b48e790d105c74afd994247efc714f75b0435dc5cc08c85bff3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/recording_service_host_test.c",
+      "sha256": "2d8a7fd6b4ae3c789f3dcd8edea295e1ef57883f21ba0b736ed2fddbd2d0fc90",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/recording_signal_test.py",
+      "sha256": "929c38b94214a152fd7cad4dc075c174eefab115ddeb39257bdaec8ce39c3a8a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/structured_memory_host_test.c",
+      "sha256": "104a883c4590a326b61a2fbecb39398efcd6dee57b772b56d796807d27f57c20",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/tls_trust_host_test.c",
+      "sha256": "c94174e1ca7a5ac0fa165102c190e8df8ec3a0d2702402670e1debebfdff703e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/voice_action_host_test.c",
+      "sha256": "da02d7d26f64a8e6fb64c133024b0659144c07d09cfdf976fa5ccbb0b6da313a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/voice_cloud_guard_host_test.c",
+      "sha256": "7334c4dec2f30028e996acd00cd56cbc5af88a30dfabbfd0006d818aec351704",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/voice_request_ledger_host_test.c",
+      "sha256": "6a6605177a1bf13d2cf46514d47316eb971d61859ab62092bdd04715d885f086",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/wakeword_host_test.c",
+      "sha256": "34399a30d9db1c4207899ceb8cf96c84c3fee037fc662c6780068f5b803de1f2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/wakeword_labels_host_test.c",
+      "sha256": "e85e83fb5eca8fd7e6184a0b815a9f6e1fef2c6de2702efad0de208cd3e3ed4b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/wakeword_session_host_test.c",
+      "sha256": "6d83c9846c26c423eb9a1d11a7a9b15fc1ec08a15290771945bddc54bae0a200",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tests/web_static_host_test.c",
+      "sha256": "57c4bb7b481e6d4bbf555ccdb8f449eb12255de4dac04ad5cca25b5d46f6059a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tools/Check-RecordingSignal.py",
+      "sha256": "48242c934ab62b6893e3bc86e3c2b14e0014e3158bd6cbfac030a8f7272f1dd3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tools/Prepare-HostTls.sh",
+      "sha256": "7f078c17555424b17130c56163183ab24c49315b4653f81677fab7c80e9b1c6c",
+      "mode": 420,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-M4HostTests.sh",
+      "sha256": "290599856e962824da5aa8f25efcca8e2be64ec1855c071a7fb7b22ae94b16fe",
+      "mode": 493,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-M5HostTests.sh",
+      "sha256": "849a85521e62b289e90fc132a23c331b4598f0011a7272271b735be25481ddf4",
+      "mode": 493,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-PortalChatHostTests.sh",
+      "sha256": "38d3cdfc3ea8463c8635dffba870c45f31b864d6ff34c66583c09b347095abc0",
+      "mode": 420,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-PriorityHostTests.sh",
+      "sha256": "cc716dd870233b303269ccd8e5b7b7162b71228fa0c05cb3599a22a109d0c10c",
+      "mode": 420,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-TlsHostTests.sh",
+      "sha256": "6baf1aa6983c521a6fbdfe11d1f12221818d8c3119a0d2bcd756af094ac59b11",
+      "mode": 420,
+      "adjustments": [
+        "Host test root inferred from checkout or OPENVELA_ROOT"
+      ]
+    },
+    {
+      "path": "packages/ai_agent/tools/Run-WebStaticHostTests.sh",
+      "sha256": "94b8092d61af7d7581e95c47124ce97a9e90303c12c4346d6910b6b909d42be9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tools/wakeword/README.md",
+      "sha256": "ed3985c26b31f0f35167f8ead9a12b0420f2294c53c703cbf4dfbaac79462941",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tools/wakeword/package_model.py",
+      "sha256": "9b7033c3c0398ece84703ee192b7cd2102b234f470bb96dd15f957aaf19c52d2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "packages/ai_agent/tools/wakeword/train_wakeword.py",
+      "sha256": "637c5f549b2f9865710168fd9b262a7e89d7a34df74f2e49a7ec03f198b52305",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/.gitignore",
+      "sha256": "a7cc8f60837b1bd8c81d54ed4dadc8da2e49ee192dcab18d822c29de522ff8a7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/.openai/hosting.json",
+      "sha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/LICENSE",
+      "sha256": "9439275fdd5f6b63c79a4bb29653babde074396e59cef7443dbbe8139ef0d7d6",
+      "mode": 420,
+      "adjustments": [
+        "Public license or module documentation added in TASK-20261003-05"
+      ]
+    },
+    {
+      "path": "tools/labtwin-dashboard/README.md",
+      "sha256": "c9c1c3afda4218eb1790545812993bed58610d91dec1c1aae9482b51cd76ffd5",
+      "mode": 420,
+      "adjustments": [
+        "Reviewed Apache-2.0 Portal license metadata"
+      ]
+    },
+    {
+      "path": "tools/labtwin-dashboard/Sync-BoardPortalToVm.ps1",
+      "sha256": "4f8fc939dc6b5c4dabc919d0bdeac78bc9776b27f279e1c90603cf4d0e7f63bf",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/app/DashboardApp.tsx",
+      "sha256": "ba5c1cebcab1e3cc396441d8aa16fc2e6b4e60988ccaa34ca7d64fd5eb2d3215",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/app/TelemetryChart.tsx",
+      "sha256": "a00c5a020e6a024f17fa5bc712a1d1b3c58c5beb89f9c472ee8564673197bf34",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/app/globals.css",
+      "sha256": "1dbc8dca1d604e60d78324d75b07ce65c3d08a8eb21fa3e375b5198ad0582b31",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/app/layout.tsx",
+      "sha256": "3062c5c79727759b3e92e4143cea667810443acdf5c9278661e0b44cc8bcedef",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/app/page.tsx",
+      "sha256": "c8b62fcd558599455cf70df28f2bcb9e0cc33e1f2d864ba0377acf69b167f3a9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/AgentChat.test.tsx",
+      "sha256": "941fa618dbe30d1f8019c6804fc0e034828b2f0d0e961e71aa9a3bea9e3a35d5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/AgentChat.tsx",
+      "sha256": "5de1aeb9fc853d32ff6c214dc8a54334ac6d7c5e2bfee72c08dc486f9fefe513",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/AgentOperations.test.tsx",
+      "sha256": "79e270a47112bc20b76d51cec6c7c770be5153df3f4557dc71c55e1fca422bbb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/AgentOperations.tsx",
+      "sha256": "f0aae438b2794a06e747d1cdafbb19f7bb975c716eca6bf463e22ca7893dc62b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/ApiTimeout.test.tsx",
+      "sha256": "d4b5ecbb730489b2537f8bf4618e3923960a44ef1e4e6d96b25ec9225549e644",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/BoardAdminApp.tsx",
+      "sha256": "7f9cc7a2e185ec244ea32ab28878064d425cbfff918038a82d87d35edfd11cd6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/BoardStartup.test.tsx",
+      "sha256": "3ca34ba937901701fd63bb7209ae1a22788e3f8ee281f32b33c92bb5608786af",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/BuildAssets.test.tsx",
+      "sha256": "b5072f07e465e2a79bd93e948865daa1b557e2cf1b4065a8d3b86cffc0ce62a0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/CalendarTime.test.tsx",
+      "sha256": "efff7a2cfbc384ff3b023a4f3580bfd09d46017911d1b8244559c2256d51a6ca",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/ExperimentHistory.test.tsx",
+      "sha256": "86fcf1d1556b35b5fadd40ab95977e4f7e744566caa66a41b934df0d130bf6a1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/ExperimentWorkspace.tsx",
+      "sha256": "ccf8b9b0cb99ab2b57ab22b176ed865213729f046549e3f0d29e22747848a11b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/InitialState.test.tsx",
+      "sha256": "77669f09d1aa3ba8679fd0b7827bba0608c81d5e29aef30fbef8cf95860080cb",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/RecorderPortal.test.tsx",
+      "sha256": "f3bdc90a2309e0c2eb8ec27014696d3f26987edce969a676702e4c2c620cdfae",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/api.ts",
+      "sha256": "3e37d2c791624f975b06fe9e7c5dfd75d4441270abc22a532f5e49d90e298802",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/asset-urls.ts",
+      "sha256": "553603951041badd1277324551864369079aeb66cbf814eef00d1ee9d705fbdc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/board.css",
+      "sha256": "722a7acfeb89fc5b66c01185db988afa4bcbfdb48b94d57f206c724c828b9a07",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/calendar-time.ts",
+      "sha256": "b20810da2b87a4ed8679afd6969f804a63583ee0c877eb12feb81f448d54437f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/experiment-history.ts",
+      "sha256": "a8cdffba64108dd9b3414f5181f7e9931ad817256d209b63768107061c31a632",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/index.html",
+      "sha256": "a4769997ec3f476b81136a1393842f56b2c74b0063d41418f7a1ff121bf2697e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/initial-state.ts",
+      "sha256": "e68c26aa18ac9628c5c6062f47ac9ab7241f15ea76dbcc473f9602ec23883494",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/main.tsx",
+      "sha256": "d715877eb3a0fc49cdc09bbbe2225c9b96141814f288d46486197ce43cb46c27",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/report-export.ts",
+      "sha256": "5711567778cf41b4f306040a98fe14a196545c7041ce91a6a03b15ed8782c948",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/board/unified.css",
+      "sha256": "517476d020276a83ec7cd1a2ead8a4d5ef2e3a11c67c6d23ea068ff605fbcfb6",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/build/sites-vite-plugin.ts",
+      "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/eslint.config.mjs",
+      "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/next.config.ts",
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/package-lock.json",
+      "sha256": "a6c7046cd6e9b635f40286ce3129764c2ba7effc3c6a06f80fc48d280bc7f289",
+      "mode": 420,
+      "adjustments": [
+        "Reviewed Apache-2.0 Portal license metadata"
+      ]
+    },
+    {
+      "path": "tools/labtwin-dashboard/package.json",
+      "sha256": "f6384607e5ccbd3d1efd552101a8383d1b4b19aa7e7465439960033a63e93f43",
+      "mode": 420,
+      "adjustments": [
+        "Reviewed Apache-2.0 Portal license metadata"
+      ]
+    },
+    {
+      "path": "tools/labtwin-dashboard/postcss.config.mjs",
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/assets/labtwin-logo.png",
+      "sha256": "11f909902d267d7194e104d6cbd84bffabb2e21ed4276ef8a46ca8b96fa3291d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/assets/recorder-portal.css",
+      "sha256": "9c1d62fb829167d1b2d96702ba0ace5b276101278e02a40fc34ae7bfa0d5cb4a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/assets/recorder-portal.js",
+      "sha256": "2e836bf77d36b89ade8a96988f0188375f630c4dfcf2e8256491f56fe253f717",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/assets/voice-config-portal.css",
+      "sha256": "b916d1c7a813e587c616de81a3450904a4bdb6057531ee63c776483aeebaf26d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/assets/voice-config-portal.js",
+      "sha256": "12b8bfd2bd757dbba22d9f9939cc41eb18249fda3672d1a352ef49f6000f77b7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/public/labtwin-logo.png",
+      "sha256": "11f909902d267d7194e104d6cbd84bffabb2e21ed4276ef8a46ca8b96fa3291d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/crypto/portable.ts",
+      "sha256": "be2bdd75f412a354ccb022ff4244460bd8b4987d1d5eb4a0d3322d8c4aa655a5",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/data/demo.ts",
+      "sha256": "bfa835af1e8c60f1c4d2f2e5cdb1494c71314b950897a5760b3ed710a0d39bb8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/db/labtwin-db.ts",
+      "sha256": "c31e6385f99e27102ebb0eae03c919dc50b449092d0788ed151c16ecd8dde017",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/protocol/schema.test.ts",
+      "sha256": "c2dd6fc454c45a28c633191097d86c920dfc79c2c78c5e4be5612cf54cf5f430",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/protocol/schema.ts",
+      "sha256": "eb605628dfb5fd8eac757d86bc5603e10e05b0fe85b968d8165b1d6a5029d803",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/report/report.test.ts",
+      "sha256": "b684516872042134ea6909ba924e47ac306cb7bf4f4a495aacd9a978522911e1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/report/report.ts",
+      "sha256": "5786cb881efe510dd252c6b7e4fb3cc44e2c7199bacd38fdfb661e3eff102caf",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/state/dashboard-reducer.test.ts",
+      "sha256": "b11f312c1ca5cb881ba08fb7cbc75222c3a1c09754ebb67f6aabbdd73bdeaf11",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/state/dashboard-reducer.ts",
+      "sha256": "54d1fecacb1b6dccde0793ed836f593c8d23131eefca36aed6bf68aa05c06728",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/transport/dashboard-client.test.ts",
+      "sha256": "d601158762dab0a62089a8c5490dc588a9c9e8ba8fd88fd98655e9916a7337d1",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/src/transport/dashboard-client.ts",
+      "sha256": "d81f219621796e6183cca3678edad437e100fadfaa524a10ca7916c62167f8a9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/tests/rendered-html.test.mjs",
+      "sha256": "0dbdcdaa1f93261d51353b6fa4e067e7f73d57fb1b43f627cb7973d7ef097e93",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/tools/public-asset-versions.ts",
+      "sha256": "61ea43c83a5a0b685d0cef8f9d4db3a813d8146e8f540b53aee2d3ad720f7006",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/tsconfig.json",
+      "sha256": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/vite.board.config.ts",
+      "sha256": "cfaa2208f50d81a84e95d50d034486ccf55b989e0076d4cda468d2456f703515",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/vite.config.ts",
+      "sha256": "4f0c751a3e51a44b3bc6ac0fc5a58c69e9c51cca7e10312c062208862aeac54d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/vitest.config.ts",
+      "sha256": "02da3d265c65beed9be6bb974e5208ae9e3c890afc125bf6ca1453ba212eb67a",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "tools/labtwin-dashboard/worker/index.ts",
+      "sha256": "2ed36d7fa996e946d9d7695c5925e7760246f6bf8fa35c06f1bc515c087dc450",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/Kconfig",
+      "sha256": "69e3bab4569b6dfc2ddbcd0f43ff45aea6c643dccc6f23d4864616385980b216",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/Makefile",
+      "sha256": "8952e1220b63e3c1ce0cb75f1051950ecee726287eb9748e3238ef7a4ac7f370",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/device_settings_ui.c",
+      "sha256": "a758df7cbcc3b95a034e19a638773c385126e84c806ef43f04b36d6415947c7e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/device_settings_ui.h",
+      "sha256": "faac4e2c6ffafc206c4e128349108e70933a55b9d229e4125164942315cb9aaa",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui.c",
+      "sha256": "7a1e942ee5fe12af624f0d2bdb15f16f5ff0c93e75420dc09303a68cb67636c8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui.h",
+      "sha256": "d5ffe47f053ae7f77b68c14fb4a5c7757689a75486d34aacd25c0d406e67f224",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_controller.c",
+      "sha256": "389501fa180330be0db122fc49c611eb24e766379cf31f103875baa889291ea7",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_controller.h",
+      "sha256": "c3ecd18a4237fdb72b216fe962f5a915082c413fae636a69ab6e5b7ac7e69492",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_demo.c",
+      "sha256": "a5c6dda6f7f231fc6c95b35cbf2aae0f6fea03e6193026a74e81b37cf6db05fa",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_demo.h",
+      "sha256": "5754132701222971165b8c3c25ba22f63bbc54ae80983af94d70253e84154138",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_flow.c",
+      "sha256": "ce26a6ae08c111e4715a5970543ba80b3c78c277a31461f8270b6a8a9c2673ee",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_flow.h",
+      "sha256": "7f4292b024fd7574b0fcb7291ad4d8b61dd9e4822cf4e748aa2b20e5348df829",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_flow_host_test.c",
+      "sha256": "6900266c8ef34054d2f54d10c75e8e8f20994aa5480287f4fdc0fbbb06b96265",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/lab_ui_types.h",
+      "sha256": "7e321581759b8e5af32e8192d820d498f92562a8aee9c6011b41dfb70f6d46ee",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/luncher_mini.c",
+      "sha256": "9381313077d47272a753cf95531160f36c1b50119c5a7a4bea0d4dddd9145251",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/ui_tokens.c",
+      "sha256": "f67f179784f772e03fcc131704e3801ec8cd5cdc17037bafbb282adf17b558f9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/ui_tokens.h",
+      "sha256": "0f3feecad9b29979a8c3fe1b46671a2eddbe1c19e59104e914c9687cc9d5f3a0",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/weather_service.c",
+      "sha256": "9c698b9c19a8a5aeae483a1f7a230d88d02ae1701479498b4705c765135ff077",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/weather_service.h",
+      "sha256": "2d4b607662327d48ef8dbc3f7731ba22aa3330ac22f73d121a0bc2ca8dde2f8c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/apps/luncher_mini/weather_service_host_test.c",
+      "sha256": "9fca32386d6ad1016b7a6f2d99e25d4ba34ad17abb66818089a473f3759df2a3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/drivers/realtek_ieee80211/os/os_dep/osdep_service.c",
+      "sha256": "f341d0882aa4e0387e87c40ea4051132bb3d91ffae579f48d57eda22975a3115",
+      "mode": 493,
+      "adjustments": [
+        "Canonical LF source bytes or reviewed public license/documentation update"
+      ]
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/drivers/realtek_ieee80211/realtek_driver.c",
+      "sha256": "12c9a67be68fb930c4132e95a781b3c48b78e264f3db1d3df5e2edc7767cfcef",
+      "mode": 493,
+      "adjustments": [
+        "Canonical LF source bytes or reviewed public license/documentation update"
+      ]
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh/defconfig",
+      "sha256": "87095646d391eaa5050ebf444760e5412b24d6dc3c6ff318a34e0a5aa255cffa",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh_minidisplay/defconfig",
+      "sha256": "735f526af506ee9efbcaa3bb7bc551595a648c46d17969bb382a1b916146706d",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-gemini-s1/scripts/Make.defs",
+      "sha256": "7562253528f04cf1fe8ad62ef73b35d9a9828234592e0a8a29cf148bcbc11d4f",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-gemini-s1/src/etc/init.d/rcS.nsh",
+      "sha256": "48daee99facf43a1902ebb6340311b1466c26fd8774836c69cccaad8f30853d9",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/components/audio/sunxi_alsa.c",
+      "sha256": "3c7bfc027222a79f7470ff6c01c942fdd85694f26ef3ed6976f18d7de213222f",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/nand_flash/src/nand_id.c",
+      "sha256": "13f47d0ade398012f93ef96fb48ccc22d1d54fd2c262df0f1b12fae7a9dd756c",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/sensor/temperature/shtc3.c",
+      "sha256": "72d403f69ce1e8c89bb1fe26ed0760fcb4649981a298559de9d6b3f239c573be",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/sound/codecs/sun8iw20-codec.c",
+      "sha256": "e48141f650268861c3b6b54a45caabd13a70df94f00c3f8b0198783e1c0ee6fc",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/sound/platform/platforms/dmic-sun8iw20.h",
+      "sha256": "be76a1f9e00cda587dfed4f6cf9c8fc297591d86926848a4715ad699952adc7e",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/spi/hal_spi.c",
+      "sha256": "d458228cd83471ec0067dfee71c05cbd12d2096d26c4c5e014eaa7b610983d5b",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/twi/platform/twi_sun8iw20.h",
+      "sha256": "7f3ef5e35ebb03813fc91a1363a33f08058f15dd32dc821bbf83ffda4f6c2959",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/source/usb/platform/sun20iw1/usb_sun20iw1.c",
+      "sha256": "51edb38f182d939b55f6535db1dc6b4c5c03812e1a79cfdd7a02ef413b086cab",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/test/sound/Makefile",
+      "sha256": "7249e8739e7ccd3ffb2ede606b8eb012c91fdbde29a93f0edf405d3428d047b2",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/test/sound/aplay.c",
+      "sha256": "c8dc2f877ae42d869d5f85f44f37a7452f0c375f1410e5e51f7ef6241b46346f",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/hal/test/sound/arecord.c",
+      "sha256": "99b899136cccb96afd1a7acdf504ce1cce97ed515d7a83fc4917f3d3b9c8b0ce",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drivers/rtos-hal/include/hal/sound/dma_wrap.h",
+      "sha256": "848f2028e9e1758a50a83ec46db3c9b1816ce5488f7e73690963a97f29f04cfd",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drv/gpio/drv_gpio.c",
+      "sha256": "736a1f1652f00607c99c5f57540c86024a14240fefb9fd89cf7402efe7af7437",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/drv/spi/drv_spi.c",
+      "sha256": "7e57809a191690f228b3753b2a0152931b79f33bab37f9dc91a9fe6f0891b0e8",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/include/realtek_wlan.h",
+      "sha256": "0cb8b340369fc70d9ccb879c14b11f0ef20ae07d65bfdbf6fccf0bc62b5cb1cf",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/r528_boot.c",
+      "sha256": "992b3d2585c0b9ac1b0be8bea4c6702de9d7d59f38465bd97c2442892fc6a0fd",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/r528_lowputc.c",
+      "sha256": "5e3ce9bfe1d6e4a67fe80203be008656463157014116e71af9e264a15eda15c3",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/r528_serial.c",
+      "sha256": "13ca52a149d0e45e39ac33a0409df2c7ec27480ad0598c265ba8c391ffdd3b74",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/chips/r528/r528_wlan.c",
+      "sha256": "1490d420c59d3ddad0693dffc7e9d2c6c269483121ba9cf629f19d0adc323150",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/UDISK/etc/wifi/wapi.conf",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/etc/ssl/curl/CA-PROVENANCE.md",
+      "sha256": "8333e234d9b1f6bfcdeb66ba66e1cbcf136dd5208554c235365a4c3c7f1cb016",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/etc/ssl/curl/ca-certificates.crt",
+      "sha256": "a41b5d356aea97a529fe27e0f7316d2f9d946d75927476cf9cf1b90637d00505",
+      "mode": 493,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/gemini-s1_nand/configs/sys_partition.fex",
+      "sha256": "c0689f6587e3407a7d29be8c089697c0446f9a70ad5853d804c02548fd30b3fd",
+      "mode": 420,
+      "adjustments": []
+    },
+    {
+      "path": "vendor/openvela/boards/vela/configs/goldfish-arm64-v8a-ap/defconfig",
+      "sha256": "b484f3a73ecac9d92a8528a698e88aa6804ba16d4fbaccff03220951333f6108",
+      "mode": 420,
+      "adjustments": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/RESOURCE_SHA256SUMS",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/SOURCE_REVISION",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/charts-BcjyL52o.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/index-CP4bBY_z.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/index-CbjtUIED.css",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/labtwin-logo.png",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/recorder-portal.css",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/recorder-portal.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/report-export-C-UnDn23.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/report-export-DeJm9Qwa.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/rolldown-runtime-DWdDZTNf.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/voice-config-portal.css",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/assets/voice-config-portal.js",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/index.html",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/common/data/res/labtwin-admin/labtwin-logo.png",
+      "reason": "Generated Portal; rebuild from maintained source"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/CMakeLists.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/cfg.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/control_center.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/http.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/http.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/ipc_udp.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/ipc_udp.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/leds.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/leds.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/uuid.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/uuid.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/websocket_client.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/websocket_client.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/control_center/xiaoshi.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/ft5x06/CMakeLists.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/ft5x06/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/ft5x06/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/ft5x06/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/ft5x06/ft5x06_main.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/led_key/CMakeLists.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/led_key/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/led_key/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/led_key/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/led_key/led_key.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/wifi_manager/CMakeLists.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/wifi_manager/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/wifi_manager/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/wifi_manager/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/wifi_manager/wifi_manager.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/CMakeLists.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/font_awesome_20_4.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/font_awesome_30_4.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/lang_config.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/lv_100ask_xz_ai_main.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/lv_100ask_xz_ai_main.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/lvgldemo.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/ui_system.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/ui_system.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/apps/xiaozhi_gui/wifi_sample.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/.gitignore",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/Kconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/README.md",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/README_zh-cn.md",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/build/build_r528s3-dshanpi.config",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/build/generate_ota_package.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/build/pre_build.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/configs/nsh/defconfig",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/dshanpi_for_trunk5.5.patch",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/include/board.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/include/board_memorymap.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/scripts/Make.defs",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/scripts/sdram.ld.S",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/Makefile",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/EQ_ACM.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/EQ_AD51652.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/EQ_AD52058.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/bt/8723fs_btaddr.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/bt/8723fs_config_C-cut.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/bt/8723fs_fw_C-cut.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/build.prop",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/factory.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/fonts/font_puhui_20_4.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rc.sysinit",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rcS",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rcS.blboottee",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rcS.dfx",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rcS.nsh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/init.d/rcS.ota",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/lmk.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/lvx_video_config.json",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/media/criteria.txt",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/media/graph.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/media/media_focus.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/media/settings.pfw",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/package.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/usr/share/mico/alarm.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/usr/share/mico/bluetooth.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/usr/share/mico/mico_server.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/usr/share/mico/pns.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/usr/share/mico/serverkey_2.pub",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/wifi_factest/rtl8733bs_wifi.map",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/wifi_factest/rtl8733bs_wifi.mask",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/workday/unnomal_holiday.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/workday/unnomal_workday.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/workday/version",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/Asia/Shanghai",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/Etc/GMT+8",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/Etc/UTC",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/PRC",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/ROC",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/etc/zoneinfo/UTC",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/r528_appinit.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/r528_board.h",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/r528_boot.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/r528_bringup.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/r528_leds.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/boards/r528/r528s3-dshanpi/src/shim_binary_compat.c",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/boot0_nand_sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/boot0_sdcard_sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/boot0_spinor_sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/fes1_sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/sboot_sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/bin/u-boot-sun8iw20p1.bin",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/BoardConfig.mk",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/ap.fex",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/boot_package.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/boot_package_nor.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/env.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/env_nor.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/image.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/image_nor.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/sunxi.fex",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/sys_config.fex",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/configs/sys_partition.fex",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/0.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/1.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/10.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/2.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/3.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/4.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/5.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/6.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/7.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/8.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/9.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/etc/wifi/wapi.conf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/get_wifi.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/moon.wav",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/data/usrdata/xiaozhi.sh",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/sign_config/cnf_base.cnf",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/sign_config/dragon_toc.cfg",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "vendor/allwinnertech/lichee/board/r528s3/dshanpi_nand/version/version_base.mk",
+      "reason": "Unrelated upstream deletion not included"
+    },
+    {
+      "path": "packages/ai_agent/.depend",
+      "reason": "Generated dependency artifact excluded from public source"
+    },
+    {
+      "path": "packages/ai_agent/.built",
+      "reason": "Generated dependency artifact excluded from public source"
+    },
+    {
+      "path": "packages/ai_agent/defconfigs/goldfish-arm64-v8a-ap/com.application.agent.demo.debug.1.0.0.rpk",
+      "reason": "Generated dependency artifact excluded from public source"
+    }
+  ]
+}

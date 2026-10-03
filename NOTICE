@@ -1,0 +1,17 @@
+Gemini-S1 LabTwin — contest2026_117_duiduidui
+
+The team's original Portal, release tooling and project documentation are
+licensed under Apache License 2.0. Existing upstream file headers, licenses
+and notices remain authoritative for their respective files.
+
+AI Agent derives from Xiaomi's openvela AI Agent and MimiClaw.
+Retain labtwin/overlay/packages/ai_agent/LICENSE and NOTICE (including MIT).
+
+The overlay also includes modified openvela/NuttX, Allwinner BSP, LVGL,
+TensorFlow Lite Micro and KVDB sources. They retain upstream licenses;
+Apache-2.0 at this repository root does not relicense those components.
+See labtwin/docs/THIRD_PARTY.md and the pinned upstream manifest.
+
+Mozilla CA bundle retains its MPL-2.0 header and source attribution.
+No private firmware, credentials, user audio or privately trained wakeword
+model is distributed in this source release.

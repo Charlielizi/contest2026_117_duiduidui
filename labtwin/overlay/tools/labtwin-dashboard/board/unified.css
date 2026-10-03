@@ -1,0 +1,292 @@
+.unified-portal {
+  --portal-sidebar-width: 112px;
+  grid-template-columns: var(--portal-sidebar-width) minmax(0, 1fr);
+}
+
+.unified-portal .portal-sidebar {
+  width: var(--portal-sidebar-width);
+  padding-inline: 8px;
+  align-items: stretch;
+}
+
+.unified-portal .portal-sidebar .brand-mark {
+  align-self: center;
+  margin-bottom: 18px;
+}
+
+.unified-portal .portal-sidebar nav {
+  gap: 3px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.unified-portal .portal-sidebar nav::-webkit-scrollbar {
+  display: none;
+}
+
+.unified-portal .portal-sidebar .nav-button {
+  min-height: 48px;
+  padding: 5px 3px;
+}
+
+.unified-portal .portal-sidebar .nav-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  color: inherit;
+}
+
+.unified-portal .portal-sidebar .nav-button small {
+  max-width: 94px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.unified-portal .portal-sidebar .nav-lock {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  color: var(--sidebar-muted);
+  font-size: 8px;
+  font-style: normal;
+}
+
+.unified-portal .portal-sidebar .theme-toggle {
+  align-self: center;
+  flex: 0 0 auto;
+  margin-top: 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.unified-portal .portal-sidebar .sidebar-foot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+.unified-portal .portal-sidebar .sidebar-foot div {
+  min-width: 0;
+}
+
+.unified-portal .portal-sidebar .sidebar-foot strong,
+.unified-portal .portal-sidebar .sidebar-foot small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.unified-portal .portal-sidebar .sidebar-foot strong {
+  color: var(--sidebar-text);
+  font-size: 9px;
+}
+
+.unified-portal .portal-sidebar .sidebar-foot small {
+  max-width: 72px;
+  margin-top: 2px;
+  color: var(--sidebar-muted);
+  font-size: 8px;
+}
+
+.unified-portal .content {
+  padding: 20px 0 40px;
+}
+
+.unified-portal .topbar {
+  background: transparent;
+  border: 0;
+  padding-inline: 0;
+}
+
+.unified-portal .top-actions,
+.unified-portal .topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.unified-portal .panel-header {
+  min-height: 36px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.unified-portal .panel-header h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.unified-portal .two-column {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.75fr) minmax(420px, 1.25fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.unified-portal .form-stack,
+.unified-portal .settings-sections {
+  display: grid;
+  gap: 13px;
+}
+
+.unified-portal .settings-sections {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.unified-portal .desktop-enhancement {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--surface);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.unified-portal .admin-surface {
+  animation: content-in 0.22s ease both;
+}
+
+/* Native <dialog open> is absolutely positioned by the browser UA stylesheet.
+   Make it participate in the centered backdrop layout explicitly. */
+.dialog-backdrop > dialog {
+  position: relative;
+  inset: auto;
+  place-self: center;
+  width: min(430px, calc(100vw - 40px));
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .unified-portal .two-column,
+  .unified-portal .settings-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .unified-portal {
+    grid-template-columns: 1fr;
+  }
+
+  .unified-portal .portal-sidebar {
+    width: 100%;
+    align-items: center;
+  }
+
+  .unified-portal .portal-sidebar nav {
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+    grid-auto-columns: 72px;
+    justify-content: start;
+  }
+
+  .unified-portal .portal-sidebar .nav-button {
+    min-width: 72px;
+  }
+
+  .unified-portal .portal-sidebar .sidebar-foot {
+    display: none;
+  }
+}
+
+/* Experiment workspace, calendar and administrator chat.  These rules stay
+   inside the board stylesheet so the Vite build remains dependency-free. */
+.unified-portal .workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, .7fr) minmax(460px, 1.3fr);
+  align-items: start;
+  gap: 18px;
+}
+
+.unified-portal .task-toolbar,
+.unified-portal .calendar-controls,
+.unified-portal .task-time-grid,
+.unified-portal .timer-form {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.unified-portal .task-toolbar { justify-content: space-between; margin-bottom: 12px; color: var(--ink-tertiary); font-size: 12px; }
+.unified-portal .task-time-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.unified-portal .task-time-grid label, .unified-portal .timer-form label { flex: 1; }
+.unified-portal .task-steps { display: grid; gap: 8px; margin: 0; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); }
+.unified-portal .task-steps legend { color: var(--ink-secondary); padding: 0 4px; font-size: 12px; font-weight: 700; }
+.unified-portal .task-step-input { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.unified-portal .task-meta { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; }
+.unified-portal .task-meta dl { margin: 0; }
+.unified-portal .task-meta dl div { display: grid; grid-template-columns: 84px 1fr; gap: 10px; margin-bottom: 8px; font-size: 12px; }
+.unified-portal .task-meta dt { color: var(--ink-tertiary); }
+.unified-portal .task-meta dd { margin: 0; color: var(--ink-secondary); }
+.unified-portal .task-runtime { display: grid; gap: 10px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-subtle); }
+.unified-portal .task-runtime textarea { width: 100%; box-sizing: border-box; resize: vertical; }
+.unified-portal .timer-form { display: grid; grid-template-columns: minmax(140px, 1fr) 110px auto; }
+
+.unified-portal .calendar-view { display: grid; gap: 14px; }
+.unified-portal .calendar-controls { justify-content: space-between; flex-wrap: wrap; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.unified-portal .calendar-controls input { width: min(260px, 100%); }
+.unified-portal .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--line); }
+.unified-portal .calendar-grid.week { grid-template-rows: auto minmax(270px, 1fr); }
+.unified-portal .calendar-weekday { color: var(--ink-tertiary); background: var(--surface-subtle); padding: 9px; text-align: center; font-size: 11px; font-weight: 800; }
+.unified-portal .calendar-day { min-height: 104px; display: grid; align-content: start; gap: 5px; padding: 7px; background: var(--surface); }
+.unified-portal .calendar-grid.week .calendar-day { min-height: 270px; }
+.unified-portal .calendar-day time { color: var(--ink-tertiary); font-size: 11px; font-weight: 800; }
+.unified-portal .muted-day { background: var(--surface-subtle); opacity: .63; }
+.unified-portal .calendar-event { overflow: hidden; color: var(--ink); border: 0; border-left: 3px solid var(--ink-muted); border-radius: 4px; background: var(--surface-hover); padding: 4px 5px; text-align: left; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; font-weight: 700; }
+.unified-portal .calendar-event.running { border-left-color: var(--accent); background: var(--accent-fade); }
+.unified-portal .calendar-event.completed { border-left-color: var(--info); background: var(--primary-fade); }
+.unified-portal .calendar-event.cancelled { border-left-color: var(--error); background: var(--error-fade); }
+.unified-portal .calendar-list { display: grid; gap: 8px; }
+.unified-portal .calendar-list-item { display: grid; grid-template-columns: 82px 1fr auto; gap: 12px; align-items: center; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 12px; text-align: left; }
+.unified-portal .calendar-list-item small { color: var(--ink-tertiary); }
+
+.unified-portal .agent-chat { display: grid; min-height: min(680px, calc(100vh - 150px)); grid-template-rows: auto 1fr auto; gap: 14px; }
+.unified-portal .chat-status { border-radius: 999px; padding: 6px 9px; color: var(--ink-tertiary); background: var(--surface-hover); font-size: 11px; font-weight: 800; }
+.unified-portal .chat-status.online { color: var(--accent); background: var(--accent-fade); }
+.unified-portal .chat-status.working, .unified-portal .chat-status.connecting { color: var(--warning); background: var(--warning-fade); }
+.unified-portal .chat-transcript { min-height: 360px; max-height: 62vh; display: grid; align-content: start; gap: 12px; overflow-y: auto; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-subtle); }
+.unified-portal .chat-bubble { max-width: min(760px, 88%); display: grid; gap: 4px; padding: 11px 13px; border-radius: 12px; background: var(--surface); box-shadow: 0 1px 1px rgba(0,0,0,.03); }
+.unified-portal .chat-bubble.user { justify-self: end; color: #fff; background: var(--primary); }
+.unified-portal .chat-bubble span { opacity: .72; font-size: 10px; font-weight: 800; }
+.unified-portal .chat-bubble p { margin: 0; white-space: pre-wrap; line-height: 1.65; font-size: 13px; }
+.unified-portal .chat-bubble.pending { opacity: .75; }
+.unified-portal .chat-empty { place-self: center; max-width: 420px; color: var(--ink-tertiary); text-align: center; }
+.unified-portal .chat-empty strong { display: block; color: var(--ink); margin-bottom: 6px; }
+.unified-portal .chat-composer { display: grid; grid-template-columns: 1fr auto; gap: 10px; }
+.unified-portal .chat-composer textarea { min-height: 54px; resize: vertical; }
+
+@media (max-width: 900px) {
+  .unified-portal .workspace-grid { grid-template-columns: 1fr; }
+  .unified-portal .calendar-list-item { grid-template-columns: 78px 1fr; }
+  .unified-portal .calendar-list-item small { grid-column: 2; }
+}
+
+@media (max-width: 640px) {
+  .unified-portal .task-time-grid, .unified-portal .timer-form { grid-template-columns: 1fr; }
+  .unified-portal .calendar-day { min-height: 78px; padding: 5px; }
+  .unified-portal .calendar-event { padding: 3px; font-size: 9px; }
+  .unified-portal .calendar-grid.week { overflow-x: auto; min-width: 580px; }
+  .unified-portal .chat-composer { grid-template-columns: 1fr; }
+}
+.agent-operations { padding: 12px 0; }
+.operation-card { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 12px; border: 1px solid var(--border, #ddd); border-radius: 12px; }
+.operation-card span { flex: 1 1 240px; overflow-wrap: anywhere; }
+.operation-dialog { position: fixed; z-index: 100; inset: 20% max(16px, calc((100vw - 560px)/2)) auto; padding: 24px; max-height: 75vh; overflow: auto; background: var(--surface, #fff); color: var(--ink, #222); border: 2px solid #888; border-radius: 16px; box-shadow: 0 12px 60px #0005; }
+.operation-dialog label { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
