@@ -13,13 +13,31 @@ LabTwin 面向“同时进行多个观察、倒计时和记录，结束后还要
 - **短录音与环境记录形成现场证据**：网页控制的是板载麦克风，不是电脑麦克风；温湿度趋势与阈值事件可辅助回查实验环境。
 - **面向小内存设备的恢复设计**：有界活动任务/确认队列、磁盘历史、事件提交点、录音临时文件修复和持久请求编号，避免把浏览器刷新当成新的执行命令。
 
-### 板端 UI（同源模拟器画面）
+### 现场主页：把关键状态放在一屏
 
-![320×240 同源模拟器：实验运行页](labtwin/docs/images/sim-ui-running.png) ![320×240 同源模拟器：多计时页](labtwin/docs/images/sim-ui-timers.png)
+![板端 UI：实验台主页与环境摘要](labtwin/docs/images/sim-ui-idle.png)
 
-用当前板端 C/LVGL 原码离屏渲染，任务、读数和语音均为 Mock，**不是实体板或真实云调用验收**。[六张板端 UI 图集](labtwin/docs/SIMULATOR_UI.md)还包括主页、语音、环境告警和完成确认，附来源与复现工具。
+板端 UI 将时间、环境摘要和最近实验集中显示，底部提供实验、语音与多任务入口，适合实验台上的快速查看。
 
-### 实板网页画面
+### 实验步骤与并行计时：随时知道做到哪一步
+
+![板端 UI：实验步骤与倒计时](labtwin/docs/images/sim-ui-running.png) ![板端 UI：并行任务与计时焦点](labtwin/docs/images/sim-ui-timers.png)
+
+运行页突出当前步骤、进度和剩余时间；多任务页保留其他任务状态，切换焦点即可查看不同倒计时。暂停、下一步和结束有独立入口。
+
+### 语音交互与结束确认：文字可读，动作明确
+
+![板端 UI：语音状态与对话文字](labtwin/docs/images/sim-ui-voice.png) ![板端 UI：完成实验确认](labtwin/docs/images/sim-ui-complete-confirm.png)
+
+语音前台将状态提示与对话文字分区，长内容在独立卡片阅读；完成实验另有确认入口。这是板端页面交互，网页 Agent 的高影响操作则由独立的可信确认机制保护。
+
+### 环境告警：把变化带回实验过程
+
+![板端 UI：温度告警与确认入口](labtwin/docs/images/sim-ui-alert.png)
+
+告警页并列展示关联实验、当前值与阈值；网页提供温湿度趋势和事件回查。板端 UI 图使用演示数据，图片来源与复现方式见[开发说明](labtwin/docs/DEVELOPMENT.md#界面展示资源)，实测范围见[验证记录](labtwin/docs/VALIDATION.md)。
+
+### 网页录音与历史日历：回查现场证据
 
 ![Gemini-S1 实板：三条历史录音与浏览器回放](labtwin/docs/images/recordings-board.jpg)
 
@@ -29,7 +47,7 @@ LabTwin 面向“同时进行多个观察、倒计时和记录，结束后还要
 
 历史实板截图：本地 QA 任务按实际日期展示；不是云模型对话或真实化学实验。图像版本、来源和另外三张页面截图见[演示图集](labtwin/docs/SCREENSHOTS.md)。
 
-阅读入口：[项目设计与亮点](labtwin/docs/PROJECT.md) · [开发说明](labtwin/docs/DEVELOPMENT.md) · [现场演示流程](labtwin/docs/DEMO.md) · [板端模拟 UI](labtwin/docs/SIMULATOR_UI.md) · [实板截图](labtwin/docs/SCREENSHOTS.md) · [验证边界](labtwin/docs/VALIDATION.md)。
+阅读入口：[项目设计与亮点](labtwin/docs/PROJECT.md) · [开发说明](labtwin/docs/DEVELOPMENT.md) · [现场演示流程](labtwin/docs/DEMO.md) · [实板截图](labtwin/docs/SCREENSHOTS.md) · [验证边界](labtwin/docs/VALIDATION.md)。
 
 ## 主要能力
 

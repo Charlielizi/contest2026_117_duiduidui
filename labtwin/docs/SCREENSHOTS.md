@@ -1,6 +1,6 @@
 # 实板网页演示图集
 
-板端 C/LVGL 模拟画面另见 [SIMULATOR_UI.md](SIMULATOR_UI.md)；该图集使用 Mock，不与本页实板证据混称。
+板端 UI 已融入[项目功能介绍](PROJECT.md)，图片来源和复现见[开发说明](DEVELOPMENT.md#界面展示资源)；本页保留实板网页的独立证据记录。
 
 Task: TASK-20261003-06；Primary Module: Management Dashboard。五张图均来自真实 Gemini-S1 网页，不是生成图或 mock 数据拼图。原 JPEG 未改像素，来源、版本、尺寸和 SHA-256 存于 [images/manifest.json](images/manifest.json)，纳入发布清单与 CI 校验。
 

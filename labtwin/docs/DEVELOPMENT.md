@@ -14,7 +14,7 @@ Task: TASK-20261003-06；Primary Module: Management Dashboard。阅读顺序：[
 
 更多分工见 [modules.md](modules.md)。overlay 是增量输入，其他依赖由上游提供；按 [SOURCE_MANIFEST.json](../SOURCE_MANIFEST.json) 恢复来源和文件模式。
 
-同源 C/LVGL 桌面离屏截图和复现工具见 [SIMULATOR_UI.md](SIMULATOR_UI.md)。直接编译当前 UI 原码，使用既有 demo 场景；它不是 Goldfish/R528 固件运行，也不调用真实板端服务。
+项目介绍中的板端 UI 图与当前 UI 原码对应，来源和复现方式见本页[界面展示资源](#界面展示资源)。
 
 ## 实验与时间
 
@@ -55,3 +55,24 @@ python3 -m unittest discover -s labtwin/tools -p 'test_*.py' -v
 上述在提交仓运行；C 主机测试与 Portal 命令在应用 overlay 后的 openvela 目录运行，完整命令见构建指南。公开 CI 检查精确文件清单/新增历史、发布工具、文档链接/图像来源、Portal 单元/组件、lint 和板端网页生产构建；不自动烧录板卡。
 
 开发使用 Task ID、隔离分支/worktree 和单一集成责任人。功能交接记录基线、文件、同步、测试和未验收项；没有实板证据就不把主机通过写成硬件通过。秘密规则扫描只是门槛，不是完备保证；凭据、原音频、设备数据、私有 IMG 与训练模型不得混入公开源码。
+
+## 界面展示资源
+
+TASK-20261004-02 将六张板端 UI 图融入 README 与项目功能介绍，不再单列图集。图片由 TASK-20261004-01 使用同源 C/LVGL 桌面预览离屏保存，原生 320×240，未裁剪、缩放或修改像素；不是实体屏幕照片，也不是 Goldfish 运行 R528 固件。
+
+任务、计时、传感器/天气读数、联网/麦克风标志、语音文字/置信度和告警均为既有 `lab_ui_demo` 演示数据，时钟来自电脑。画面中的“事件写入时间线”不证明事件落盘，板端完成确认不等于网页 Agent 令牌执行。图片只展示 UI，不新增触摸、真实音频、唤醒、模型、TTS、传感器或持久化验收；实测仍见 [VALIDATION.md](VALIDATION.md)。
+
+- UI 来源：`vendor/allwinnertech` revision `678904361b8f1b29d43bdf675270fddfe13273c7`；四个 C 文件和五个头文件与 Ubuntu 权威源逐项 SHA 一致，未修改 UI、demo 或 token。
+- 渲染依赖：LVGL 9.1.0、SDL 2.32.10、w64devkit GCC 16.1.0，SDL `dummy`/software 离屏；不控制桌面窗口、鼠标或键盘，不运行板端网络/音频服务。
+- 字体：同一 MiSans-Normal.ttf，SHA-256 `fe0adb56147299e53d5b208a561d6ca7fe4ce5c727a5ead38ad9827b26024f3a`，沿用七档 TinyTTF 字号和 CJK fallback；桌面栅格化不等同于目标板所有字体/显示配置。字体、依赖库、DLL 和 exe 不上传。
+- [图片来源清单](images/simulator-manifest.json)记录六图的尺寸、字节数、SHA 和渲染输入；[实板网页来源](images/manifest.json)单独记录真实网页截图，证据类别不混称。
+
+已有项目 `ui_preview` 的 LVGL/SDL/w64devkit/字体和 `liblvgl-preview.a` 后，可在公开仓 PowerShell 运行：
+
+```powershell
+.\labtwin\tools\Capture-UiScreenshots.ps1 -PreviewRoot <已准备的ui_preview目录>
+```
+
+脚本编译 [capture_ui.c](../tools/capture_ui.c)，链接已有软件渲染库，调用原 UI 和 demo 场景并一次保存六图，不下载/安装软件，不改板端服务或源码。构建目录保留供核查；主页时间随电脑变化，重新捕获的字节 SHA 不保证相同。预览依赖未准备时直接报错，不承诺零依赖启动。
+
+六图合计 104,479 字节，仅用于文档，不进入 Portal、ROMFS 或 IMG。本次只调整说明和引用，图片、功能代码及固件未改。
