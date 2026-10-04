@@ -14,3 +14,5 @@ Primary Module: Agent Runtime。本公开快照不改变正在运行的私人镜
 TASK-20261003-06（Primary Module: Management Dashboard）只补充作品说明和证据呈现，不改变模块实现：[项目设计](PROJECT.md)、[开发数据流与代码入口](DEVELOPMENT.md)、[演示流程](DEMO.md)、[带来源的实板图集](SCREENSHOTS.md)。新增 JPEG 不进入 Portal 或 ROMFS，成熟度仍按 VALIDATION.md。
 
 TASK-20261004-01（Primary Module: Device UI）补六张同源 C/LVGL 界面图及离屏捕获工具；TASK-20261004-02 将板端 UI 融入[项目介绍](PROJECT.md)，来源和复现集中在[开发说明](DEVELOPMENT.md#界面展示资源)。UI/demo/token 原码不改，演示数据与实体证据分离，PNG 不进入固件，不扩大模块交付承诺。
+
+TASK-20261004-03（Primary Module: Management Dashboard）将首页、项目介绍和网页UI图注聚焦功能价值，图片证据/部署默认与研发日志说明集中DEVELOPMENT，实际测试结论保留VALIDATION；原图和模块行为不变，无新增硬件或云验收。
